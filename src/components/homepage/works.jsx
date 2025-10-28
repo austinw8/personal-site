@@ -1,4 +1,3 @@
-import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
@@ -28,11 +27,11 @@ const Works = () => {
 
 						<div className="work">
 							<img
-								src="./twitter.png"
-								alt="twitter"
+								src="./github.png"
+								alt="github"
 								className="work-image"
 							/>
-							<div className="work-title">Twitter</div>
+							<div className="work-title">Github</div>
 							<div className="work-subtitle">
 								Software Engineer
 							</div>

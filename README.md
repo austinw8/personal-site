@@ -6,13 +6,5 @@
 <hr>
 
 <div align="center">
-  <p>
-    Copyright &copy;
-    <span id="year"></span>
-    <a href="https://github.com/austinw8">Austin Mangelson</a>. All rights reserved.
-  </p>
+    <p>Copyright &copy; 2025 <a href="https://github.com/austinw8">Austin Mangelson</a>. All rights reserved.</p>
 </div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
