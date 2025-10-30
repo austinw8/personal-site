@@ -86,13 +86,13 @@ const Homepage = () => {
 						</div>
 					</div>
 
-					<div className="homepage-container">
+					<div className="mt-64">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
+								<div style={{ fontSize: "2rem" }}>Austin Mangelson</div>
 								<div className="title homepage-title">
 									{INFO.homepage.title}
 								</div>
-
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>

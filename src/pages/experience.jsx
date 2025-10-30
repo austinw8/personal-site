@@ -11,7 +11,7 @@ import SEO from "../data/seo";
 
 import "./styles/contact.css";
 
-const Resume = () => {
+const Experience = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -21,7 +21,7 @@ const Resume = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Resume | ${INFO.main.title}`}</title>
+				<title>{`Experience | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -30,7 +30,7 @@ const Resume = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="resume" />
+				<NavBar active="experience" />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">
@@ -40,7 +40,7 @@ const Resume = () => {
 
 					<div className="contact-container">
 						<div className="title contact-title">
-							Resume Details Coming Soon...
+							Experience Details Coming Soon...
 						</div>
 						<div className="homepage-works">
 								<Works />
@@ -55,4 +55,4 @@ const Resume = () => {
 	);
 };
 
-export default Resume;
+export default Experience;

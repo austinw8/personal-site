@@ -7,7 +7,7 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 import Articles from "./pages/articles";
 import ReadArticle from "./pages/readArticle";
-import Resume from "./pages/resume";
+import Experience from "./pages/experience";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 
@@ -29,7 +29,7 @@ function App() {
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/articles" element={<Articles />} />
 				<Route path="/article/:slug" element={<ReadArticle />} />
-				<Route path="/resume" element={<Resume />} />
+				<Route path="/experience" element={<Experience />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>

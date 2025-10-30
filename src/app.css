@@ -54,6 +54,7 @@
 	font-size: 45px;
 	font-weight: 700;
 	width: 70%;
+	white-space: pre-line;
 }
 
 .subtitle {
@@ -63,6 +64,7 @@
 	line-height: 28px;
 	width: 70%;
 	margin-top: 25px;
+	white-space: pre-line;
 }
 
 .page-footer {
