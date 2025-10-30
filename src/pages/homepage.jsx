@@ -11,15 +11,9 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
-import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
-
-import "./styles/homepage.css";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -80,38 +74,38 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="homepage-logo-container">
+					<div className="flex justify-start items-center pt-[130px]">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
 
-					<div className="mt-64">
-						<div className="homepage-first-area">
-							<div className="homepage-first-area-left-side">
+					<div>
+						<div className="flex lg:flex-row flex-col justify-between items-center">
+							<div className="flex flex-col items-start order-2 lg:order-none w-full lg:w-auto">
 								<div style={{ fontSize: "2rem" }}>Austin Mangelson</div>
-								<div className="title homepage-title">
+								<div className="title w-full lg:w-[85%]">
 									{INFO.homepage.title}
 								</div>
-								<div className="subtitle homepage-subtitle">
+								<div className="subtitle w-full lg:w-[85%]">
 									{INFO.homepage.description}
 								</div>
 							</div>
 
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
+							<div className="flex items-center order-1 lg:order-none">
+								<div className="w-[370px] h-[370px] lg:order-none order-1 lg:ml-0 ml-2 lg:pt-0 pt-[50px] pb-[50px]">
+									<div className="overflow-hidden rounded-[10%] rotate-3">
 										<img
 											src="headshot_1.jpg"
-											alt="about"
-											className="homepage-image"
+											alt="headshot_img"
+											className="w-full"
 										/>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div className="homepage-socials">
+						<div className="flex justify-start items-center pt-[30px]">
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -119,7 +113,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="homepage-social-icon"
+									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -129,7 +123,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									className="homepage-social-icon"
+									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -139,38 +133,10 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faMailBulk}
-									className="homepage-social-icon"
+									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 						</div>
-
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
-
-						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
-
-							<div className="homepage-works">
-								<Works />
-							</div>
-						</div>
-
 						<div className="page-footer">
 							<Footer />
 						</div>

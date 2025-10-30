@@ -14,21 +14,8 @@ const INFO = {
 	homepage: {
 		title: "Software Developer",
 		description: [
-			"I love building software tools that make life easier!",
-			"I enjoy solving complex problems while continually seeking new challenges to learn more."
-		].join(" ")
-	},
-
-	about: {
-		title: "Hey, I’m Austin!",
-		description: [
-			"I'm a software developer and lead data analyst at DataThink.io.",
-			"I've spent the last 5 years traveling the world and now live in Idaho Falls with my wife Monica.",
-			"\n \n Some fun facts about me:",
-			"\n • I have a bachelors degree in Exercise Physiology",
-			"\n • I've lived in 11 different countries",
-			"\n • I'm half deaf",
-			"\n • I'm fluent in Spanish",
+			"I’m a software developer and lead data analyst at DataThink.io.",
+			"I live in Idaho Falls with my wife, Monica, and love building tools that make life easier while tackling complex problems that keep me learning and growing.",
 		].join(" ")
 	},
 
