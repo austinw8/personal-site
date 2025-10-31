@@ -137,6 +137,65 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
+					
+						{/* My Tech Stack section */}
+						<section className="mt-12 w-full">
+							<h2 style={{ fontSize: "2rem" }} className="mb-6">
+								My Tech Stack
+							</h2>
+							<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+								{/* Repeat these cards for each technology; add images to public/logos/ */}
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/typescript.png" alt="TypeScript" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">TypeScript</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/python.png" alt="Python" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Python</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/react.png" alt="React" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">React</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/fastapi.png" alt="FastAPI" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">FastAPI</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/nextjs.png" alt="Next.js" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Next.js</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/tailwind.png" alt="Tailwind" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Tailwind</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/git.png" alt="Git" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Git</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/firebase.png" alt="Firebase" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Firebase</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/mongodb.png" alt="MongoDB" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">MongoDB</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/postgres.png" alt="Postgres" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Postgres</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/docker.png" alt="Docker" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Docker</div>
+								</div>
+								<div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6">
+									<img src="/logos/nodejs.png" alt="Node.js" className="w-16 h-16 mb-4" />
+									<div className="text-center font-semibold">Node.js</div>
+								</div>
+							</div>
+						</section>
+					
 						<div className="page-footer">
 							<Footer />
 						</div>
