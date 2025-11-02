@@ -20,10 +20,9 @@ const INFO = {
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "Articles",
 		description: [
-			"Chronological collection of my long-form thoughts on programming,",
-			"leadership, product design, and more."
+			"A collection of thoughts, insights, and things I'm learning from the projects I work on."
 		].join(" ")
 	},
 

@@ -1,39 +1,53 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
-import myArticles from "../data/articles";
+import { getArticleBySlug } from "../data/articlesData";
 
 import "./styles/readArticle.css";
-
-let ArticleStyle = styled.div``;
 
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-	const article = myArticles[slug - 1];
+	const article = getArticleBySlug(slug);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, [article]);
 
-	ArticleStyle = styled.div`
-		${article().style}
-	`;
+	if (!article) {
+		return (
+			<React.Fragment>
+				<Helmet>
+					<title>{`Article Not Found | ${INFO.main.title}`}</title>
+				</Helmet>
+				<div className="page-content">
+					<NavBar />
+					<div className="content-wrapper">
+						<div className="read-article-container">
+							<h1>Article not found</h1>
+							<p>The article you're looking for doesn't exist.</p>
+						</div>
+					</div>
+				</div>
+			</React.Fragment>
+		);
+	}
 
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${article().title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
+				<title>{`${article.title} | ${INFO.main.title}`}</title>
+				<meta name="description" content={article.description} />
+				<meta name="keywords" content={article.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -59,16 +73,18 @@ const ReadArticle = () => {
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">
 								<div className="read-article-date">
-									{article().date}
+									{article.date}
 								</div>
 							</div>
 
 							<div className="title read-article-title">
-								{article().title}
+								{article.title}
 							</div>
 
 							<div className="read-article-body">
-								<ArticleStyle>{article().body}</ArticleStyle>
+								<ReactMarkdown remarkPlugins={[remarkGfm]}>
+									{article.content}
+								</ReactMarkdown>
 							</div>
 						</div>
 					</div>

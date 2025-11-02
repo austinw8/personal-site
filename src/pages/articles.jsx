@@ -8,7 +8,7 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import articlesData from "../data/articlesData";
 
 import "./styles/articles.css";
 
@@ -50,17 +50,17 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								{articlesData.map((article) => (
 									<div
 										className="articles-article"
-										key={(index + 1).toString()}
+										key={article.slug}
 									>
 										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+											key={article.slug}
+											date={article.date}
+											title={article.title}
+											description={article.preview}
+											link={"/article/" + article.slug}
 										/>
 									</div>
 								))}

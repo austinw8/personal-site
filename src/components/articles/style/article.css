@@ -8,11 +8,6 @@
 	text-decoration: none;
 }
 
-.article-left-side {
-	min-width: 20%;
-	max-width: 20%;
-}
-
 .article-right-side {
 	flex-basis: 80%;
 	min-width: 700px;
@@ -29,7 +24,7 @@
 }
 
 .article-date {
-	padding-top: 30px;
+	padding-top: 5px;
 	font-size: 15px;
 	color: var(--tertiary-color);
 }
