@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -9,7 +8,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 
 import INFO from "../data/user";
-import { getArticleBySlug } from "../data/articlesData";
+import { getArticleBySlug } from "../lib/loadArticles";
 
 import "./styles/readArticle.css";
 
@@ -26,9 +25,6 @@ const ReadArticle = () => {
 	if (!article) {
 		return (
 			<React.Fragment>
-				<Helmet>
-					<title>{`Article Not Found | ${INFO.main.title}`}</title>
-				</Helmet>
 				<div className="page-content">
 					<NavBar />
 					<div className="content-wrapper">
@@ -44,12 +40,6 @@ const ReadArticle = () => {
 
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{`${article.title} | ${INFO.main.title}`}</title>
-				<meta name="description" content={article.description} />
-				<meta name="keywords" content={article.keywords.join(", ")} />
-			</Helmet>
-
 			<div className="page-content">
 				<NavBar />
 

@@ -22,7 +22,7 @@ const INFO = {
 	articles: {
 		title: "Articles",
 		description: [
-			"A collection of thoughts, insights, and things I'm learning from the projects I work on."
+			"A collection of my thoughts, insights, and things I'm learning from the projects I work on."
 		].join(" ")
 	},
 
