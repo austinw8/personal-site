@@ -6,8 +6,8 @@ import remarkGfm from "remark-gfm";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import Notfound from "./404";
 
-import INFO from "../data/user";
 import { getArticleBySlug } from "../lib/loadArticles";
 
 import "./styles/readArticle.css";
@@ -19,23 +19,13 @@ const ReadArticle = () => {
 	const article = getArticleBySlug(slug);
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		if (article) {
+			window.scrollTo(0, 0);
+		}
 	}, [article]);
 
 	if (!article) {
-		return (
-			<React.Fragment>
-				<div className="page-content">
-					<NavBar />
-					<div className="content-wrapper">
-						<div className="read-article-container">
-							<h1>Article not found</h1>
-							<p>The article you're looking for doesn't exist.</p>
-						</div>
-					</div>
-				</div>
-			</React.Fragment>
-		);
+		return <Notfound />;
 	}
 
 	return (

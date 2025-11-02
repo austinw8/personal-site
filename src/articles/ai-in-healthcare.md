@@ -2,7 +2,6 @@
 title: "Artificial Intelligence in Healthcare"
 date: "2025-06-08"
 description: "AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology."
-keywords: ["Artificial Intelligence in Healthcare", "AI", "healthcare", "technology"]
 slug: "ai-in-healthcare"
 ---
 

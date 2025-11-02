@@ -1,7 +1,6 @@
-// Import markdown files directly
-import cloudComputingMd from '../articles/cloud-computing-benefits.md?raw';
-import aiHealthcareMd from '../articles/ai-in-healthcare.md?raw';
-import testArticle from '../articles/test-article.md?raw';
+// Dynamically import all markdown files from articles folder
+const articleModules = import.meta.glob('../articles/*.md', { as: 'raw', eager: true });
+
 /**
  * Simple frontmatter parser (no dependencies needed)
  */
@@ -53,20 +52,17 @@ function parseMarkdown(content) {
   };
 }
 
-// Parse all articles
-const articlesData = [
-  { content: cloudComputingMd },
-  { content: aiHealthcareMd },
-  { content: testArticle }
-];
-
-const articles = articlesData.map(({ content }) => {
-  const article = parseMarkdown(content);
-  return {
-    ...article,
-    slug: article.slug
-  };
-}).sort((a, b) => new Date(b.date) - new Date(a.date));
+// Parse all articles dynamically from the imported modules
+const articles = Object.entries(articleModules)
+  .filter(([path]) => !path.includes('README.md')) // Exclude README if present
+  .map(([, content]) => {
+    const article = parseMarkdown(content);
+    return {
+      ...article,
+      slug: article.slug
+    };
+  })
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
 
 export default articles;
 

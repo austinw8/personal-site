@@ -2,7 +2,6 @@
 title: "The Benefits of Cloud Computing"
 date: "2023-05-07"
 description: "Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud."
-keywords: ["The Benefits of Cloud Computing", "cloud", "technology"]
 slug: "cloud-computing-benefits"
 ---
 

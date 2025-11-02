@@ -13,7 +13,6 @@ This folder contains all blog articles for my portfolio site. Each article is a 
 title: "Your Article Title"
 date: "YYYY-MM-DD"
 description: "A brief description of your article (this will be shown in the preview)"
-keywords: ["keyword1", "keyword2", "keyword3"]
 slug: "your-article-slug"
 ---
 
@@ -27,7 +26,6 @@ Your article content follows here in markdown format...
 - **title**: The title of the article
 - **date**: Publication date in YYYY-MM-DD format
 - **description**: A short description shown in article preview
-- **keywords**: Array of keywords for SEO
 - **slug**: URL-friendly identifier for the article - this will be used in the URL path
 
 ## How It Works
