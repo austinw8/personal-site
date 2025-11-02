@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -62,7 +63,10 @@ const ReadArticle = () => {
 							</div>
 
 							<div className="read-article-body">
-								<ReactMarkdown remarkPlugins={[remarkGfm]}>
+								<ReactMarkdown
+									remarkPlugins={[remarkGfm]}
+									rehypePlugins={[rehypeRaw]}
+								>
 									{article.content}
 								</ReactMarkdown>
 							</div>

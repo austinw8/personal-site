@@ -100,6 +100,15 @@
 .read-article-body ol {
 	margin-left: 2em;
 	margin-bottom: 1em;
+	padding-left: 1em;
+}
+
+.read-article-body ul {
+	list-style-type: disc;
+}
+
+.read-article-body ol {
+	list-style-type: decimal;
 }
 
 .read-article-body li {
