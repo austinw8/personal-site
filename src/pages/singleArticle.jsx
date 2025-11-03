@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import { ArrowLeft } from "lucide-react";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -41,16 +42,12 @@ const ReadArticle = () => {
 						</div>
 					</div>
 
-					<div className="read-article-container">
-						<div className="read-article-back">
-							<img
-								src="../back-button.png"
-								alt="back"
-								className="read-article-back-button"
-								onClick={() => navigate(-1)}
-							/>
-						</div>
+					<div className="read-article-back" onClick={() => navigate("/articles")}>
+						<ArrowLeft size={20} />
+						<span>Back to articles</span>
+					</div>
 
+					<div className="read-article-container">
 						<div className="read-article-wrapper">
 							<div className="read-article-date-container">
 								<div className="read-article-date">

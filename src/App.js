@@ -5,7 +5,7 @@ import ReactGA from "react-ga4";
 import Homepage from "./pages/homepage";
 import Projects from "./pages/projects";
 import Articles from "./pages/articles";
-import ReadArticle from "./pages/readArticle";
+import ReadArticle from "./pages/singleArticle";
 import Experience from "./pages/experience";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";

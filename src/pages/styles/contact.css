@@ -7,8 +7,8 @@
 .contact-logo {
 	display: flex;
 	position: fixed;
-	border: 1px solid white;
 	top: 4vh;
+	z-index: 1000;
 }
 
 .contact-subtitle {
