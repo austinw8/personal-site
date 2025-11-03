@@ -8,6 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import Badge from "../components/common/badge";
 import Notfound from "./404";
 
 import { getArticleBySlug } from "../lib/loadArticles";
@@ -57,9 +58,21 @@ const ReadArticle = () => {
 								{article.title}
 							</div>
 
+							{article.tags && article.tags.length > 0 && (
+								<div className="pb-[30px] flex flex-wrap gap-2">
+									{article.tags.map((tag, index) => (
+										<Badge key={index} tag={tag} />
+									))}
+								</div>
+							)}
+
 							<div className="prose prose-zinc max-w-none pb-[50px]
 								prose-headings:text-primary
-								prose-a:text-link prose-a:no-underline hover:prose-a:underline">
+								prose-a:text-link prose-a:no-underline hover:prose-a:underline
+								prose-code:before:content-none prose-code:after:content-none
+								prose-code:bg-zinc-100 prose-code:rounded-sm prose-code:px-2 prose-code:py-0.5 prose-code:text-primary prose-code:font-mono prose-code:font-normal
+								prose-pre:bg-zinc-100 prose-pre:rounded-sm prose-pre:text-primary"
+								>
 								<ReactMarkdown
 									remarkPlugins={[remarkGfm]}
 									rehypePlugins={[rehypeRaw]}

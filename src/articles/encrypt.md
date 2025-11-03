@@ -26,7 +26,6 @@ The Caesar Cipher involves shifting the letters of the alphabet by a fixed numbe
 This is a basic example of how to use `caesar_cipher()`:
 
 ```r
-
 library(encrypt)
 
 caesar_cipher("attack at dawn", 3)

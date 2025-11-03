@@ -46,6 +46,7 @@ const Articles = () => {
 											title={article.title}
 											description={article.preview}
 											link={"/article/" + article.slug}
+											tags={article.tags}
 										/>
 									</div>
 								))}
