@@ -4,13 +4,11 @@ import Project from "./project";
 
 import INFO from "../../data/user";
 
-import "./styles/allProjects.css";
-
 const AllProjects = () => {
 	return (
-		<div className="all-projects-container">
+		<div className="flex flex-wrap items-stretch pt-[30px] pb-[30px] -ml-[35px] -mr-[35px]">
 			{INFO.projects.map((project, index) => (
-				<div className="all-projects-project" key={index}>
+				<div className="w-[calc(100%/3)] box-border p-2.5 overflow-hidden max-[600px]:w-[calc(100%/2)]" key={index}>
 					<Project
 						logo={project.logo}
 						title={project.title}

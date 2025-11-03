@@ -12,8 +12,6 @@ import Notfound from "./404";
 
 import { getArticleBySlug } from "../lib/loadArticles";
 
-import "./styles/readArticle.css";
-
 const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
@@ -36,30 +34,32 @@ const ReadArticle = () => {
 				<NavBar />
 
 				<div className="content-wrapper">
-					<div className="read-article-logo-container">
-						<div className="read-article-logo">
+					<div className="flex justify-start pt-[25px]">
+						<div className="flex fixed rounded-full top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="read-article-back" onClick={() => navigate("/articles")}>
-						<ArrowLeft size={20} />
+					<div className="flex items-center gap-2 pt-[100px] pb-2.5 cursor-pointer text-secondary text-base transition-colors duration-200 ease-in-out hover:text-primary" onClick={() => navigate("/articles")}>
+						<ArrowLeft size={20} className="flex-shrink-0" />
 						<span>Back to articles</span>
 					</div>
 
-					<div className="read-article-container">
-						<div className="read-article-wrapper">
-							<div className="read-article-date-container">
-								<div className="read-article-date">
+					<div className="flex h-full m-0 relative">
+						<div className="w-4/5 pt-[30px]">
+							<div className="border-l-2 border-l-quaternary text-tertiary text-base items-center h-[22px]">
+								<div className="font-primary pl-[15px]">
 									{article.date}
 								</div>
 							</div>
 
-							<div className="title read-article-title">
+							<div className="title pt-[15px] pb-[30px] !w-full">
 								{article.title}
 							</div>
 
-							<div className="read-article-body">
+							<div className="prose prose-zinc max-w-none pb-[50px]
+								prose-headings:text-primary
+								prose-a:text-link prose-a:no-underline hover:prose-a:underline">
 								<ReactMarkdown
 									remarkPlugins={[remarkGfm]}
 									rehypePlugins={[rehypeRaw]}

@@ -1,61 +1,64 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./styles/navBar.css";
-
 const NavBar = (props) => {
 	const { active } = props;
 
 	return (
 		<React.Fragment>
-			<div className="nav-container">
-				<nav className="navbar">
-					<div className="nav-background">
-						<ul className="nav-list">
-							<li
-								className={
-									active === "home"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/">Home</Link>
+			<div className="m-0 flex justify-center items-center">
+				<nav className="flex justify-center items-center fixed top-[3vh] z-[999]">
+					<div className="w-fit px-5 py-2.5 h-10 bg-white shadow-[0px_2px_10px_rgba(0,0,0,0.1)] rounded-[40px]">
+						<ul className="flex justify-between list-none items-center m-0 p-0 gap-5">
+							<li className="font-bold text-[80%]">
+								<Link
+									to="/"
+									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
+										active === "home" ? "text-link" : "text-primary"
+									}`}
+								>
+									Home
+								</Link>
 							</li>
-							<li
-								className={
-									active === "projects"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/projects">Projects</Link>
+							<li className="font-bold text-[80%]">
+								<Link
+									to="/projects"
+									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
+										active === "projects" ? "text-link" : "text-primary"
+									}`}
+								>
+									Projects
+								</Link>
 							</li>
-							<li
-								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/articles">Articles</Link>
+							<li className="font-bold text-[80%]">
+								<Link
+									to="/articles"
+									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
+										active === "articles" ? "text-link" : "text-primary"
+									}`}
+								>
+									Articles
+								</Link>
 							</li>
-							<li
-								className={
-									active === "experience"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/experience">Experience</Link>
+							<li className="font-bold text-[80%]">
+								<Link
+									to="/experience"
+									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
+										active === "experience" ? "text-link" : "text-primary"
+									}`}
+								>
+									Experience
+								</Link>
 							</li>
-							<li
-								className={
-									active === "contact"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/contact">Contact</Link>
+							<li className="font-bold text-[80%]">
+								<Link
+									to="/contact"
+									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
+										active === "contact" ? "text-link" : "text-primary"
+									}`}
+								>
+									Contact
+								</Link>
 							</li>
 						</ul>
 					</div>

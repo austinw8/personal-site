@@ -10,12 +10,9 @@ Explore ancient European shipwrecks with this [Shipwreck Explorer](https://austi
 This map contains shipwrecks as far back as 1,800 B.C., with ships from multiple eras, ranging all the way from the western coast of Africa to the Arabian Sea, and from the Red Sea to northern Norway.
 
 Filter by:
-
-Era (Hellenistic, Punic, Byzantine, Roman, etc.)
-
-Cargo Type (amphora, stone, metal artifacts, money, etc.)
-
-Sea Area (Baltic Sea, Mediterranean, Adriatic Sea, English Channel, etc.)
+- Era (Hellenistic, Punic, Byzantine, Roman, etc.)
+- Cargo Type (amphora, stone, metal artifacts, money, etc.)
+- Sea Area (Baltic Sea, Mediterranean, Adriatic Sea, English Channel, etc.)
 
 This shipwreck mapping has the potential to aid archaeologists and historians in identifying ancient trade routes, planning future site excavations, and studying/understanding ancient maritime technology.
 

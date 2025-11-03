@@ -1,5 +1,13 @@
 @import "/src/data/styles.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -38,12 +46,13 @@
 }
 
 .content-wrapper {
-	width: 100%;
+	width: 90%;
 	max-width: 100%;
-	margin: 0 5%;
-	padding: 0 40px;
+	margin: 0 auto;
+	padding: 0 20px;
 	position: relative;
 	z-index: 2;
+	box-sizing: border-box;
 }
 
 .title {

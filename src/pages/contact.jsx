@@ -7,8 +7,6 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 
-import "./styles/contact.css";
-
 const Contact = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -19,37 +17,30 @@ const Contact = () => {
 			<div className="page-content">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
-					<div className="contact-logo-container">
-						<div className="contact-logo">
+					<div className="flex justify-start pt-[25px]">
+						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="contact-container">
-						<div className="title contact-title">
-							Let's Get in Touch: Ways to Connect with Me
+					<div className="flex flex-col justify-around mt-[120px]">
+						<div className="title">
+							Ways to Connect with Me
 						</div>
 
-						<div className="subtitle contact-subtitle">
-							Thank you for your interest in getting in touch with
-							me. I welcome your feedback, questions, and
-							suggestions. If you have a specific question or
-							comment, please feel free to email me directly at{" "}
-							<a href={`mailto:${INFO.main.email}`}>
+						<div className="subtitle !w-full">
+							Thanks for reaching out! I'd love to hear your thoughts, questions, or ideas.
+							<br></br>Just shoot me an email at {" "}
+							<a href={`mailto:${INFO.main.email}`} className="text-link">
 								{INFO.main.email}
-							</a>
-							. I make an effort to respond to all messages within
-							24 hours, although it may take me longer during busy
-							periods. Alternatively, you can use the contact form
-							on my website to get in touch. Simply fill out the
-							required fields and I'll get back to you as soon as
-							possible. Thanks again for your interest, and I look forward
-							to hearing from you!
+							</a>.
+							I usually reply within a day (unless things get crazy 🤪).
+							<br></br>You can also check out my links below to connect elsewhere.
 						</div>
 					</div>
 
-					<div className="socials-container">
-						<div className="contact-socials">
+					<div className="flex flex-col mt-20">
+						<div className="flex justify-start items-center">
 							<Socials />
 						</div>
 					</div>

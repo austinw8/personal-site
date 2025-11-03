@@ -7,8 +7,6 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 
-import "./styles/projects.css";
-
 const Projects = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -19,31 +17,21 @@ const Projects = () => {
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<div className="projects-logo">
+					<div className="flex justify-start pt-[25px]">
+						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
-					<div className="projects-container">
-						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+					<div className="flex flex-col h-full m-0 pt-[120px] max-[600px]:pt-[60px]">
+						<div className="title">
+							My Projects
+						</div>
+						<div className="subtitle">
+							A collection of projects I've worked on, both
+							independently and collaboratively.
 						</div>
 
-						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
-						</div>
-
-						<div className="projects-list">
+						<div>
 							<AllProjects />
 						</div>
 					</div>

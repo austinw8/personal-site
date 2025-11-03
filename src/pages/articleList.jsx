@@ -8,8 +8,6 @@ import Article from "../components/articles/article";
 import INFO from "../data/user";
 import articlesData from "../lib/loadArticles";
 
-import "./styles/articles.css";
-
 const Articles = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -20,26 +18,26 @@ const Articles = () => {
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
-					<div className="articles-logo-container">
-						<div className="articles-logo">
+					<div className="flex justify-start pt-[25px]">
+						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="articles-main-container">
-						<div className="title articles-title">
+					<div className="flex flex-col h-full m-0 pt-[120px]">
+						<div className="title max-[1024px]:!w-full">
 							{INFO.articles.title}
 						</div>
 
-						<div className="subtitle articles-subtitle">
+						<div className="subtitle max-[1024px]:!w-full">
 							{INFO.articles.description}
 						</div>
 
-						<div className="articles-container">
-							<div className="articles-wrapper">
+						<div className="flex flex-col">
+							<div className="pt-[50px] pb-[50px] flex flex-col">
 								{articlesData.map((article) => (
 									<div
-										className="articles-article"
+										className="pt-0 pl-[35px] pb-5 border-l-2 border-l-[#f4f4f5] w-full"
 										key={article.slug}
 									>
 										<Article

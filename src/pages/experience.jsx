@@ -5,10 +5,6 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Works from "../components/homepage/works";
 
-import INFO from "../data/user";
-
-import "./styles/contact.css";
-
 const Experience = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -19,19 +15,20 @@ const Experience = () => {
 			<div className="page-content">
 				<NavBar active="experience" />
 				<div className="content-wrapper">
-					<div className="contact-logo-container">
-						<div className="contact-logo">
+					<div className="flex justify-start pt-[25px]">
+						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="contact-container">
-						<div className="title contact-title">
+					<div className="flex flex-col justify-around mt-[120px]">
+						<div className="title">
 							Experience Details Coming Soon...
 						</div>
-						<div className="homepage-works">
-								<Works />
-							</div>
+						<br></br>
+						<div>
+							<Works />
+						</div>
 					</div>
 					<div className="page-footer">
 						<Footer />

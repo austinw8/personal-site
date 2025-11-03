@@ -80,11 +80,17 @@
 	* {
 		@apply border-border;
 	}
+	html {
+		overflow-x: hidden;
+		width: 100%;
+	}
 	body {
 		margin: 0;
 		font-family: var(--primary-font);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		overflow-x: hidden;
+		width: 100%;
 		@apply bg-background text-foreground;
 	}
 	code {
