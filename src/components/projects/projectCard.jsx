@@ -27,25 +27,25 @@ const ProjectCard = (props) => {
 					<div className="flex gap-3 pt-5">
 
 						{projectLink && (
-						<Link to={projectLink} className="no-underline group">
+						<a href={projectLink} target="_blank" rel="noopener noreferrer" className="no-underline group">
 							<div className="flex items-center text-secondary text-xs group-hover:text-link transition-colors duration-300 ease-in-out">
 								<div className="pl-[5px] text-[13px]">
 									<FontAwesomeIcon icon={faExternalLink} />
 								</div>
 								<div className="pl-2 font-bold">Check It Out</div>
 							</div>
-						</Link>
+						</a>
 						)}
 
 						{codeLink && (
-						<Link to={codeLink} className="no-underline group">
+						<a href={codeLink} target="_blank" rel="noopener noreferrer" className="no-underline group">
 							<div className="flex items-center text-secondary text-xs group-hover:text-link transition-colors duration-300 ease-in-out">
 								<div className="pl-[5px] text-[13px]">
 									<FontAwesomeIcon icon={faGithub} />
 								</div>
 								<div className="pl-2 font-bold">View Code</div>
 							</div>
-						</Link>
+						</a>
 						)}
 
 						{articleSlug && (
