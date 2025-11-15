@@ -7,7 +7,7 @@ const BADGE_CONFIG = {
 		logo: "r",
 		logoColor: "white"
 	},
-	"Javascript": {
+	"JavaScript": {
 		color: "F7DF1E",
 		logo: "javascript",
 		logoColor: "black"
@@ -75,6 +75,11 @@ const BADGE_CONFIG = {
 	"CSS": {
 		color: "663399",
 		logo: "css",
+		logoColor: "white"
+	},
+	"HTML": {
+		color: "E34F26",
+		logo: "html5",
 		logoColor: "white"
 	}
 };

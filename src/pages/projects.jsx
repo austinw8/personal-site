@@ -11,50 +11,31 @@ const ProjectsPage = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
+	// add new projects to the TOP
 	const projects = [
 		{
-			title: "Project 1",
-			description: [
-				"Lorem ipsum dolor sit amet.",
-				"Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-			].join(" "),
-			projectLink: "https://github.com",
-			articleSlug: "ancient-shipwreck-explorer",
-			tags: ["Javascript", "React", "Node.js"],
+			title: "Dragon Bane",
+			description:
+				"Save Lumeria from the gruesome dragon terrorizing the kingdom in this text-based RPG fantasy game.",
+			codeLink: "https://github.com/austinw8/dragon_bane",
+			projectLink: "https://austinw8.github.io/dragon_bane/dragon_bane.html",
+			tags: ["HTML", "CSS", "JavaScript"],
 		},
 		{
-			title: "Project 2",
-			description: [
-				"Lorem ipsum dolor sit amet.",
-				"Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-			].join(" "),
-			projectLink: "https://github.com",
-			tags: ["Python", "Docker"],
+			title: "MiddleEarth",
+			description:
+				"Mapping Tolkein's Middle-Earth using R-based GIS tools and spatial data to recreate iconic locations from the novels.",
+			codeLink: "https://github.com/austinw8/MiddleEarth",
+			articleSlug: "mapping-middle-earth",
+			tags: ["R"],
 		},
 		{
-			title: "Project 3",
-			description: [
-				"Lorem ipsum dolor sit amet.",
-				"Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-			].join(" "),
-			projectLink: "https://github.com",
-		},
-		{
-			title: "Project 4",
-			description: [
-				"Lorem ipsum dolor sit amet.",
-				"Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-			].join(" "),
-			projectLink: "https://github.com",
-			tags: ["Javascript", "Vue"],
-		},
-		{
-			title: "Project 5",
-			description: [
-				"Lorem ipsum dolor sit amet.",
-				"Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima."
-			].join(" "),
-			projectLink: "https://github.com",
+			title: "Ancient Shipwreck Explorer",
+			description:
+				"An interactive web app of ancient shipwrecks around the Meditteranean Sea using data from GeoDatabase.",
+			codeLink: "https://github.com/austinw8/ancient_shipwrecks",
+			articleSlug: "shipwreck-explorer",
+			tags: ["R", "RShiny"],
 		},
 	]
 
@@ -75,8 +56,7 @@ const ProjectsPage = () => {
 						</div>
 
 						<div className="subtitle pb-4">
-							A collection of projects I've worked on, both
-							independently and collaboratively.
+							A collection of projects I've worked on, both independently and collaboratively.
 						</div>
 
 						<div className="flex flex-wrap items-stretch pt-2 pb-4 -ml-4">
@@ -85,6 +65,7 @@ const ProjectsPage = () => {
 									<ProjectCard
 										title={project.title}
 										description={project.description}
+										codeLink={project.codeLink}
 										projectLink={project.projectLink}
 										articleSlug={project.articleSlug}
 										tags={project.tags}
