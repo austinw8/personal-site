@@ -86,6 +86,13 @@
 	border-top: 2px solid var(--tertiary-color);
 }
 
+.hover-effect:hover {
+	background-color: #f0f0f0;
+	opacity: 1;
+	transition: color 0.3s ease;
+	box-shadow: large;
+}
+
 @media (max-width: 1270px) {
 	.page-content:before,
 	.page-content:after {

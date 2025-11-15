@@ -15,13 +15,13 @@ const Experience = () => {
 			<div className="page-content">
 				<NavBar active="experience" />
 				<div className="content-wrapper">
-					<div className="flex justify-start pt-[25px]">
+					<div className="flex justify-start pt-4">
 						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="flex flex-col justify-around mt-[120px]">
+					<div className="flex flex-col justify-around mt-28">
 						<div className="title">
 							Experience Details Coming Soon...
 						</div>

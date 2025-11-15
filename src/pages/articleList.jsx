@@ -18,13 +18,13 @@ const Articles = () => {
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
-					<div className="flex justify-start pt-[25px]">
+					<div className="flex justify-start pt-4">
 						<div className="flex fixed top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="flex flex-col h-full m-0 pt-[120px]">
+					<div className="flex flex-col h-full m-0 pt-28">
 						<div className="title max-[1024px]:!w-full">
 							{INFO.articles.title}
 						</div>
