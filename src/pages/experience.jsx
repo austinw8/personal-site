@@ -5,7 +5,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Works from "../components/homepage/works";
 
-const Experience = () => {
+const ExperiencePage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -39,4 +39,4 @@ const Experience = () => {
 	);
 };
 
-export default Experience;
+export default ExperiencePage;

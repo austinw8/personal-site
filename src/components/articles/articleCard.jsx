@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Badge from "../common/badge";
 
-const Article = (props) => {
+const ArticleCard = (props) => {
 	const { date, title, description, link, tags } = props;
 
 	return (
@@ -36,4 +36,4 @@ const Article = (props) => {
 	);
 };
 
-export default Article;
+export default ArticleCard;

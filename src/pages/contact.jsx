@@ -7,7 +7,7 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 
-const Contact = () => {
+const ContactPage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -54,4 +54,4 @@ const Contact = () => {
 	);
 };
 
-export default Contact;
+export default ContactPage;

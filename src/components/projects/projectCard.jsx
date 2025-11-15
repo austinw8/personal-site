@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import Badge from "../common/badge";
 
-const Project = (props) => {
+const ProjectCard = (props) => {
 	const { title, description, projectLink, articleSlug, tags } = props;
 
 	return (
 		<React.Fragment>
-			<div className="mix-blend-normal rounded-[20px] opacity-80 h-full hover-effect transition-colors duration-300 ease-in-out max-[600px]:h-[300px]">
+			<div className="w-full mix-blend-normal rounded-2xl opacity-80 h-full hover-effect transition-colors duration-300 ease-in-out max-[600px]:h-[300px] border">
 				<div className="p-8 h-full flex flex-col">
 					<div className="font-secondary text-primary text-base pt-3 mb-4 font-bold">{title}</div>
 
@@ -51,4 +51,4 @@ const Project = (props) => {
 	);
 };
 
-export default Project;
+export default ProjectCard;

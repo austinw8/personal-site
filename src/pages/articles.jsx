@@ -3,12 +3,12 @@ import React, { useEffect } from "react";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import Article from "../components/articles/article";
+import ArticleCard from "../components/articles/articleCard";
 
 import INFO from "../data/user";
 import articlesData from "../lib/loadArticles";
 
-const Articles = () => {
+const ArticlesPage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -40,7 +40,7 @@ const Articles = () => {
 										className="pt-0 pl-[35px] pb-5 border-l-2 border-l-[#f4f4f5] w-full"
 										key={article.slug}
 									>
-										<Article
+										<ArticleCard
 											key={article.slug}
 											date={article.date}
 											title={article.title}
@@ -62,4 +62,4 @@ const Articles = () => {
 	);
 };
 
-export default Articles;
+export default ArticlesPage;
