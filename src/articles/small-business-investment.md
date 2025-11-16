@@ -3,6 +3,7 @@ title: "Small Business Investment"
 date: "2024-07-08"
 description: "Exploratative analysis of six small businesses' transaction data to identify the best candidate for a business loan."
 slug: "small-business-investment"
+tags: [R, RShiny]
 ---
 
 Explore six businesses’ transaction data over two months to assess growth potential and stability, identifying the best candidate for a business loan.
@@ -50,7 +51,9 @@ data_tidy |>
 ```
 </details>
 
-![Image 1](/article_images/small_business_investment/small_business_investment_1.png)
+<p align="center">
+  <img src="../public/article_images/small_business_investment/small_business_investment_1.png" width="550" />
+</p>
 
 ## Revenue Over Time
 This table summarizes the peak revenue for each business across daily, weekly, and monthly periods.
@@ -94,7 +97,9 @@ data_tidy |>
 ```
 </details>
 
-![Image 2](/article_images/small_business_investment/small_business_investment_2.png)
+<p align="center">
+  <img src="../public/article_images/small_business_investment/small_business_investment_2.png" width="550" />
+</p>
 
 This graph tells an interesting story. We learn that many of the businesses had particularly successful or difficult weeks.
 
@@ -138,7 +143,9 @@ data_tidy |>
 ```
 </details>
 
-![Image 3](/article_images/small_business_investment/small_business_investment_3.png)
+<p align="center">
+  <img src="../public/article_images/small_business_investment/small_business_investment_3.png" width="550" />
+</p>
 
 This plot helps us more clearly see revenue trends of each business, and makes it clear that LeBelle leads the way with the most promising revenue forecast, followed by Tacontento and Frozone.
 
@@ -169,7 +176,9 @@ data_tidy |>
 ```
 </details>
 
-![Image 4](/article_images/small_business_investment/small_business_investment_4.png)
+<p align="center">
+  <img src="../public/article_images/small_business_investment/small_business_investment_4.png" width="550" />
+</p>
 
 ## Recommendation
 Based on consistent high revenue, upward growth trends, and high transaction values, LeBelle demonstrates the strongest potential for growth and stability, making it the most promising candidate to receive a business loan.

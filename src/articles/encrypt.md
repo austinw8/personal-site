@@ -3,6 +3,7 @@ title: "Encrypt"
 date: "2024-08-22"
 description: "A fun R package for encrypting and decrypting messages using classic ciphers."
 slug: "encrypt"
+tags: [R]
 ---
 
 Secret codes can be used to send fun messages between friends! Encrypt makes it easy to create, write, and send an encoded message to your buddies.

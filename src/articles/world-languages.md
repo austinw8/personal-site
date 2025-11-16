@@ -3,6 +3,7 @@ title: "World Languages"
 date: "2024-07-18"
 description: "An exploration of endangered languages around the world using Glottolog data."
 slug: "world-languages"
+tags: [R, RShiny]
 ---
 
 ***NOTE: This article was moved from my older blog site. To view the code in action, check it out [HERE](https://austinw8.quarto.pub/austinw8/posts/world-languages/).***

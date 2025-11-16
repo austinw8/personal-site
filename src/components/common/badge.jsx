@@ -81,6 +81,21 @@ const BADGE_CONFIG = {
 		color: "E34F26",
 		logo: "html5",
 		logoColor: "white"
+	},
+	"Tailwind": {
+		color: "06B6D4",
+		logo: "tailwindcss",
+		logoColor: "white"
+	},
+	"FastAPI": {
+		color: "009688",
+		logo: "fastapi",
+		logoColor: "white"
+	},
+	"SQLAlchemy": {
+		color: "D71F00",
+		logo: "sqlalchemy",
+		logoColor: "white"
 	}
 };
 

@@ -3,6 +3,7 @@ title: "Ancient Shipwreck Explorer"
 date: "2024-08-06"
 description: "An interactive visualization of ancient shipwrecks around the Mediterranean Sea using data from GeoDatabase."
 slug: "shipwreck-explorer"
+tags: [R, RShiny]
 ---
 
 Explore ancient European shipwrecks with this [Shipwreck Explorer](https://austinw8.shinyapps.io/ancient_shipwrecks_app/) Shiny web app.

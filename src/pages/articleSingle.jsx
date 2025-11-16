@@ -47,7 +47,7 @@ const ReadArticle = () => {
 					</div>
 
 					<div className="flex h-full m-0 relative">
-						<div className="w-4/5 pt-[30px]">
+						<div className="w-full pt-[30px]">
 							<div className="border-l-2 border-l-quaternary text-tertiary text-base items-center h-[22px]">
 								<div className="font-primary pl-[15px]">
 									{article.date}

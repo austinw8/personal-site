@@ -3,7 +3,7 @@ title: "Mapping Middle-Earth"
 date: "2024-08-13"
 description: "Mapping Tolkien's Middle-Earth using R-based GIS tools."
 slug: "mapping-middle-earth"
-tags: [R, RShiny]
+tags: [R]
 ---
 
 Explore and create Tolkien’s Middle Earth with R-based GIS tools, including `{ggplot2}` and `{sf}`
