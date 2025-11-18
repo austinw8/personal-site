@@ -61,7 +61,7 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="flex justify-start items-center pt-[130px]">
+					<div className="flex justify-start items-center pt-32">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
 						</div>
@@ -80,7 +80,7 @@ const Homepage = () => {
 							</div>
 
 							<div className="flex items-center order-1 lg:order-none">
-								<div className="w-[370px] h-[370px] lg:order-none order-1 lg:ml-0 ml-2 lg:pt-0 pt-[50px] pb-[50px]">
+								<div className="w-[370px] h-[370px] lg:order-none order-1 lg:ml-0 ml-2 lg:pt-0 pt-12 pb-12">
 									<div className="overflow-hidden rounded-[10%] rotate-3">
 										<img
 											src="images/headshot_1.jpg"
@@ -92,7 +92,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="flex justify-start items-center pt-[30px]">
+						<div className="flex justify-start items-center pt-8">
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -100,7 +100,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -110,7 +110,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -120,7 +120,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faMailBulk}
-									className="pr-[20px] text-[25px] transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 						</div>

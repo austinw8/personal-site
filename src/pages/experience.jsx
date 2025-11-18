@@ -57,22 +57,22 @@ const ExperiencePage = () => {
 									<img
 										src="./images/datathink-logo.png"
 										alt="DataThink"
-										className="h-[40px] w-[40px] rounded-full outline outline-[6px] outline-white shadow-[0px_7px_10px_rgba(0,0,0,0.25)] hover:opacity-80 transition-opacity cursor-pointer"
+										className="h-10 w-10 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
 									/>
 								</a>
 								<div className="pl-5">
-									<div className="text-[18px] font-bold text-secondary">DataThink</div>
-									<div className="text-[14px] text-secondary pt-1">
+									<div className="text-lg font-bold text-secondary">DataThink</div>
+									<div className="text-sm text-secondary pt-1">
 										Consultant
 									</div>
-									<div className="text-[14px] text-tertiary pt-1 italic">
+									<div className="text-sm text-tertiary pt-1 italic">
 										2024 - Present
 									</div>
 								</div>
 							</div>
 
 							{/* Nested Client Engagements */}
-							<div className="pl-[60px] pt-8 space-y-8">
+							<div className="pl-16 pt-8 space-y-8">
 
 								{/* Legrande Client */}
 								<div className="relative">
@@ -86,20 +86,20 @@ const ExperiencePage = () => {
 											<img
 												src="./images/legrande-logo.png"
 												alt="Legrande Health"
-												className="h-[32px] w-[32px] rounded-full outline outline-[4px] outline-white shadow-[0px_5px_8px_rgba(0,0,0,0.2)] hover:opacity-80 transition-opacity cursor-pointer"
+												className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
 											/>
 										</a>
 										<div className="pl-5">
-											<div className="text-[16px] font-semibold text-secondary">Legrande Health</div>
-											<div className="text-[13px] text-tertiary pt-1">
+											<div className="text-base font-semibold text-secondary">Legrande Health</div>
+											<div className="text-xs text-tertiary pt-1">
 												Software Developer / Lead Data Analyst
 											</div>
-											<div className="text-[13px] text-tertiary pt-1 italic">
+											<div className="text-xs text-tertiary pt-1 italic">
 												2024 - Present
 											</div>
 										</div>
 									</div>
-									<ul className="pl-12 pt-3 space-y-2 text-[13px] text-tertiary list-disc">
+									<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
 										<li>Maintained Legrande Health’s order management platform, a full-stack web app processing 200+ weekly orders for 115+ medical practices using React, Python, FastAPI, and PostgreSQL.</li>
 										<li>Developed interactive analytics dashboards and custom reporting tools both inside and outside the portal, empowering clinics and admins to track performance, inventory, and patient metrics.</li>
 										<li>Built and automated ETL data migration pipelines with PostgreSQL, BigQuery, Meltano, and Google Cloud Run, enabling business reporting and cost-saving insights.</li>
@@ -118,20 +118,20 @@ const ExperiencePage = () => {
 											<img
 												src="./images/mwa-logo.png"
 												alt="Mountain West Anesthesiology"
-												className="h-[32px] w-[32px] rounded-full outline outline-[4px] outline-white shadow-[0px_5px_8px_rgba(0,0,0,0.2)] hover:opacity-80 transition-opacity cursor-pointer"
+												className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
 											/>
 										</a>
 										<div className="pl-5">
-											<div className="text-[16px] font-semibold text-secondary">Mountain West Anesthesiology</div>
-											<div className="text-[13px] text-tertiary pt-1">
+											<div className="text-base font-semibold text-secondary">Mountain West Anesthesiology</div>
+											<div className="text-xs text-tertiary pt-1">
 												Data Scientist
 											</div>
-											<div className="text-[13px] text-tertiary pt-1 italic">
+											<div className="text-xs text-tertiary pt-1 italic">
 												2024 - 2025
 											</div>
 										</div>
 									</div>
-									<ul className="pl-12 pt-3 space-y-2 text-[13px] text-tertiary list-disc">
+									<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
 										<li>Maintained an R Shiny app for a network of anesthesiologists, reducing manual reporting time from 40 hours per month to only a couple hours of maintenance per month.</li>
 										<li>Developed R packages and system testing for easier reporting and app maintenance.</li>
 									</ul>

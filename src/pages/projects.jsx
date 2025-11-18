@@ -87,7 +87,7 @@ const ProjectsPage = () => {
 
 						<div className="flex flex-wrap items-stretch pt-2 pb-4 -ml-4">
 							{projects.map((project, index) => (
-								<div className="w-[calc(100%/3)] box-border p-2.5 overflow-hidden max-[600px]:w-[calc(100%/2)]" key={index}>
+								<div className="w-1/3 box-border p-2.5 overflow-hidden max-[600px]:w-1/2" key={index}>
 									<ProjectCard
 										title={project.title}
 										description={project.description}

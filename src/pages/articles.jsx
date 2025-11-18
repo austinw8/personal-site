@@ -34,10 +34,10 @@ const ArticlesPage = () => {
 						</div>
 
 						<div className="flex flex-col">
-							<div className="pt-[50px] pb-[50px] flex flex-col">
+							<div className="pt-12 pb-12 flex flex-col">
 								{articlesData.map((article) => (
 									<div
-										className="pt-0 pl-[35px] pb-5 border-l-2 border-l-[#f4f4f5] w-full"
+										className="pt-0 pl-9 pb-5 border-l-2 border-l-zinc-100 w-full"
 										key={article.slug}
 									>
 										<ArticleCard

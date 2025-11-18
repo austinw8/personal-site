@@ -35,38 +35,38 @@ const ReadArticle = () => {
 				<NavBar />
 
 				<div className="content-wrapper">
-					<div className="flex justify-start pt-[25px]">
+					<div className="flex justify-start pt-6">
 						<div className="flex fixed rounded-full top-[4vh] z-[1000]">
 							<Logo width={46} />
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2 pt-[100px] pb-2.5 cursor-pointer text-secondary text-base transition-colors duration-200 ease-in-out hover:text-primary" onClick={() => navigate("/articles")}>
+					<div className="flex items-center gap-2 pt-24 pb-2.5 cursor-pointer text-secondary text-base transition-colors duration-200 ease-in-out hover:text-primary" onClick={() => navigate("/articles")}>
 						<ArrowLeft size={20} className="flex-shrink-0" />
 						<span>Back to articles</span>
 					</div>
 
 					<div className="flex h-full m-0 relative">
-						<div className="w-full pt-[30px]">
-							<div className="border-l-2 border-l-quaternary text-tertiary text-base items-center h-[22px]">
-								<div className="font-primary pl-[15px]">
+						<div className="w-full pt-8">
+							<div className="border-l-2 border-l-quaternary text-tertiary text-base items-center h-6">
+								<div className="font-primary pl-4">
 									{article.date}
 								</div>
 							</div>
 
-							<div className="title pt-[15px] pb-[30px] !w-full">
+							<div className="title pt-4 pb-8 !w-full">
 								{article.title}
 							</div>
 
 							{article.tags && article.tags.length > 0 && (
-								<div className="pb-[30px] flex flex-wrap gap-2">
+								<div className="pb-8 flex flex-wrap gap-2">
 									{article.tags.map((tag, index) => (
 										<Badge key={index} tag={tag} />
 									))}
 								</div>
 							)}
 
-							<div className="prose prose-zinc max-w-none pb-[50px]
+							<div className="prose prose-zinc max-w-none pb-12
 								prose-headings:text-primary
 								prose-a:text-link prose-a:no-underline hover:prose-a:underline
 								prose-code:before:content-none prose-code:after:content-none

@@ -8,9 +8,9 @@ const NavBar = (props) => {
 		<React.Fragment>
 			<div className="m-0 flex justify-center items-center">
 				<nav className="flex justify-center items-center fixed top-[3vh] z-[999]">
-					<div className="w-fit px-5 py-2.5 h-10 bg-white shadow-[0px_2px_10px_rgba(0,0,0,0.1)] rounded-[40px]">
+					<div className="w-fit px-5 py-2.5 h-10 bg-white shadow-md rounded-full">
 						<ul className="flex justify-between list-none items-center m-0 p-0 gap-5">
-							<li className="font-bold text-[80%]">
+							<li className="font-bold text-sm">
 								<Link
 									to="/"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
@@ -20,7 +20,7 @@ const NavBar = (props) => {
 									Home
 								</Link>
 							</li>
-							<li className="font-bold text-[80%]">
+							<li className="font-bold text-sm">
 								<Link
 									to="/projects"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
@@ -30,7 +30,7 @@ const NavBar = (props) => {
 									Projects
 								</Link>
 							</li>
-							<li className="font-bold text-[80%]">
+							<li className="font-bold text-sm">
 								<Link
 									to="/articles"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
@@ -40,7 +40,7 @@ const NavBar = (props) => {
 									Articles
 								</Link>
 							</li>
-							<li className="font-bold text-[80%]">
+							<li className="font-bold text-sm">
 								<Link
 									to="/experience"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
@@ -50,7 +50,7 @@ const NavBar = (props) => {
 									Experience
 								</Link>
 							</li>
-							<li className="font-bold text-[80%]">
+							<li className="font-bold text-sm">
 								<Link
 									to="/contact"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${

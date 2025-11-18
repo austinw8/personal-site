@@ -12,13 +12,13 @@ const Socials = () => {
 		<div>
 			<div className="flex pb-5">
 				<a href={INFO.socials.github} target="_blank" rel="noreferrer" className="no-underline">
-					<div className="text-[15px] text-secondary">
+					<div className="text-sm text-secondary">
 						<FontAwesomeIcon
 							icon={faGithub}
-							className="text-[15px] text-secondary"
+							className="text-sm text-secondary"
 						/>
 					</div>
-					<div className="text-secondary pl-[30px] mt-[-20px] font-semibold text-[14px]">Follow on GitHub</div>
+					<div className="text-secondary pl-8 -mt-5 font-semibold text-sm">Follow on GitHub</div>
 				</a>
 			</div>
 
@@ -29,13 +29,13 @@ const Socials = () => {
 					rel="noreferrer"
 					className="no-underline"
 				>
-					<div className="text-[15px] text-secondary">
+					<div className="text-sm text-secondary">
 						<FontAwesomeIcon
 							icon={faLinkedin}
-							className="text-[15px] text-secondary"
+							className="text-sm text-secondary"
 						/>
 					</div>
-					<div className="text-secondary pl-[30px] mt-[-20px] font-semibold text-[14px]">Follow on LinkedIn</div>
+					<div className="text-secondary pl-8 -mt-5 font-semibold text-sm">Follow on LinkedIn</div>
 				</a>
 			</div>
 
@@ -47,11 +47,11 @@ const Socials = () => {
 						rel="noreferrer"
 						className="no-underline"
 					>
-						<div className="text-[15px] text-secondary">
+						<div className="text-sm text-secondary">
 							<FontAwesomeIcon icon={faEnvelope} />
 						</div>
 
-						<div className="text-secondary pl-[30px] mt-[-20px] font-semibold text-[14px]">{INFO.main.email}</div>
+						<div className="text-secondary pl-8 -mt-5 font-semibold text-sm">{INFO.main.email}</div>
 					</a>
 				</div>
 			</div>
