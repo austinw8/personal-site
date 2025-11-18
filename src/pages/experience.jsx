@@ -15,7 +15,7 @@ const ExperiencePage = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar active="experience" />
 				<div className="content-wrapper">
@@ -180,7 +180,7 @@ const ExperiencePage = () => {
 					</div>
 				</div>
 			)}
-		</React.Fragment>
+		</>
 	);
 };
 

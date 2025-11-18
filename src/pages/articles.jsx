@@ -14,7 +14,7 @@ const ArticlesPage = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
@@ -58,7 +58,7 @@ const ArticlesPage = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -57,7 +57,7 @@ const Homepage = () => {
 	};
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
@@ -130,7 +130,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

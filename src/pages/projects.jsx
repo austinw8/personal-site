@@ -66,7 +66,7 @@ const ProjectsPage = () => {
 	]
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
@@ -105,7 +105,7 @@ const ProjectsPage = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

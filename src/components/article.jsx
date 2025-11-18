@@ -8,7 +8,7 @@ const Article = (props) => {
 	const { title, description, date, link } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="w-[90%] mix-blend-normal rounded-2xl opacity-80 hover:bg-zinc-50 hover:opacity-100 transition-colors duration-300 ease-in-out max-[600px]:w-full">
 				<div className="p-8">
 					<div className="opacity-100 text-tertiary text-xs mb-4">
@@ -29,7 +29,7 @@ const Article = (props) => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -30,9 +30,9 @@ const ReadArticle = () => {
 	}
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
-				<NavBar />
+				<NavBar active="articles" />
 
 				<div className="content-wrapper">
 					<div className="flex justify-start pt-6">
@@ -87,7 +87,7 @@ const ReadArticle = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

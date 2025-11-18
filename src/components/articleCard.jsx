@@ -8,7 +8,7 @@ const ArticleCard = (props) => {
 	const { date, title, description, link, tags } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="w-full">
 				<Link to={link}>
 					<div className="w-full mix-blend-normal opacity-80 p-4 transition-colors duration-300 ease-in-out border rounded-2xl hover-effect">
@@ -32,7 +32,7 @@ const ArticleCard = (props) => {
 					</div>
 				</Link>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -13,7 +13,7 @@ const ContactPage = () => {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="page-content">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
@@ -50,7 +50,7 @@ const ContactPage = () => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 

@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
 	const { title, description, codeLink, projectLink, articleSlug, tags } = props;
 
 	return (
-		<React.Fragment>
+		<>
 			<div className="w-full mix-blend-normal rounded-2xl opacity-80 h-full hover-effect transition-colors duration-300 ease-in-out max-[600px]:h-72 border">
 				<div className="p-8 h-full flex flex-col">
 					<div className="font-secondary text-primary text-base pt-3 mb-4 font-bold">{title}</div>
@@ -61,7 +61,7 @@ const ProjectCard = (props) => {
 					</div>
 				</div>
 			</div>
-		</React.Fragment>
+		</>
 	);
 };
 
