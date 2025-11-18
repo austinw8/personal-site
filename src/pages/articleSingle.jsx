@@ -5,10 +5,10 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { ArrowLeft } from "lucide-react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import Badge from "../components/common/badge";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import Badge from "../components/badge";
 import Notfound from "./404";
 
 import { getArticleBySlug } from "../lib/loadArticles";

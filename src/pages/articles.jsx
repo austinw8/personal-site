@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import ArticleCard from "../components/articles/articleCard";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import ArticleCard from "../components/articleCard";
 
 import INFO from "../data/user";
 import articlesData from "../lib/loadArticles";

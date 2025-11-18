@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink, faNewspaper } from "@fortawesome/free-solid-svg-icons";
-import Badge from "../common/badge";
+import Badge from "./badge";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCard = (props) => {

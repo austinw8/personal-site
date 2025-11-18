@@ -3,7 +3,7 @@ const INFO = {
 		title: "Austin Mangelson Portfolio Site",
 		name: "Austin Mangelson",
 		email: "austinw.mangelson@gmail.com",
-		logo: "../a_logo.png",
+		logo: "../images/a_logo.png",
 	},
 
 	socials: {

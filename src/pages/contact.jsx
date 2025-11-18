@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import Socials from "../components/about/socials";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import Socials from "../components/socials";
 
 import INFO from "../data/user";
 
@@ -39,7 +39,7 @@ const ContactPage = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col mt-20">
+					<div className="flex flex-col mt-16">
 						<div className="flex justify-start items-center">
 							<Socials />
 						</div>

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import ProjectCard from "../components//projects/projectCard";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import ProjectCard from "../components/projectCard";
 
 
 const ProjectsPage = () => {

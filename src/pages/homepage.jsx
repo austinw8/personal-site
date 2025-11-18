@@ -7,9 +7,9 @@ import {
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Logo from "../components/common/logo";
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
+import Logo from "../components/logo";
+import Footer from "../components/footer";
+import NavBar from "../components/navBar";
 
 import INFO from "../data/user";
 
@@ -83,7 +83,7 @@ const Homepage = () => {
 								<div className="w-[370px] h-[370px] lg:order-none order-1 lg:ml-0 ml-2 lg:pt-0 pt-[50px] pb-[50px]">
 									<div className="overflow-hidden rounded-[10%] rotate-3">
 										<img
-											src="headshot_1.jpg"
+											src="images/headshot_1.jpg"
 											alt="headshot_img"
 											className="w-full"
 										/>

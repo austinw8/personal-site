@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import Works from "../components/homepage/works";
+import NavBar from "../components/navBar";
+import Footer from "../components/footer";
+import Logo from "../components/logo";
+import Works from "../components/works";
 
 const ExperiencePage = () => {
 	useEffect(() => {
@@ -23,7 +23,7 @@ const ExperiencePage = () => {
 
 					<div className="flex flex-col justify-around mt-28">
 						<div className="title">
-							Experience Details Coming Soon...
+							My Work Experience
 						</div>
 						<br></br>
 						<div>

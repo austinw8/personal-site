@@ -5,7 +5,7 @@ import {
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-import INFO from "../../data/user";
+import INFO from "../data/user";
 
 const Socials = () => {
 	return (
@@ -39,8 +39,8 @@ const Socials = () => {
 				</a>
 			</div>
 
-			<div className="before:content-[''] before:block before:pt-5 before:border-t-[3px] before:border-t-[#f4f4f5] before:mt-5">
-				<div className="flex pt-5 pb-5">
+			<div>
+				<div className="flex pb-5">
 					<a
 						href={`mailto:${INFO.main.email}`}
 						target="_blank"
