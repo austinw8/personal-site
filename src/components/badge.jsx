@@ -96,7 +96,22 @@ const BADGE_CONFIG = {
 		color: "D71F00",
 		logo: "sqlalchemy",
 		logoColor: "white"
-	}
+	},
+	"Gemini": {
+		color: "8E75B2",
+		logo: "googlegemini",
+		logoColor: "white"
+	},
+	"BigQuery": {
+		color: "669DF6",
+		logo: "googlebigquery",
+		logoColor: "white"
+	},
+	"Plotly": {
+		color: "7A76FF",
+		logo: "plotly",
+		logoColor: "white"
+	},
 };
 
 // more icons can be found at https://simpleicons.org/
