@@ -5,7 +5,6 @@ import Footer from "../components/footer";
 import Logo from "../components/logo";
 import ArticleCard from "../components/articleCard";
 
-import INFO from "../data/user";
 import articlesData from "../lib/loadArticles";
 
 const ArticlesPage = () => {

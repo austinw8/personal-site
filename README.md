@@ -27,8 +27,19 @@ The site will be available at `http://localhost:3000` and will automatically rel
 
 ## Code Quality
 
-This project uses Prettier for code formatting and ESLint for code linting. Format and fix all code issues with:
+This project uses Prettier for code formatting and ESLint for code linting.
 
+**Format code:**
+```bash
+npm run format
+```
+
+**Lint code:**
+```bash
+npm run lint
+```
+
+**Format and fix all code issues:**
 ```bash
 npm run fix
 ```
