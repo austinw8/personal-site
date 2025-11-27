@@ -10,7 +10,9 @@ const Card = (props) => {
 					<div className="text-sm text-tertiary">
 						<FontAwesomeIcon icon={icon} />
 					</div>
-					<div className="text-secondary text-sm pl-5 font-semibold">{title}</div>
+					<div className="text-secondary text-sm pl-5 font-semibold">
+						{title}
+					</div>
 				</div>
 				<div className="pt-10 text-sm">
 					<div>{body}</div>

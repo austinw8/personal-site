@@ -13,7 +13,9 @@ const ArticleCard = (props) => {
 				<Link to={link}>
 					<div className="w-full mix-blend-normal opacity-80 p-4 transition-colors duration-300 ease-in-out border rounded-2xl hover-effect">
 						<div className="text-md font-semibold">{title}</div>
-						<div className="pt-2 text-small text-tertiary">{date}</div>
+						<div className="pt-2 text-small text-tertiary">
+							{date}
+						</div>
 						{tags && tags.length > 0 && (
 							<div className="pt-2 flex flex-wrap gap-2">
 								{tags.map((tag, index) => (
@@ -21,7 +23,9 @@ const ArticleCard = (props) => {
 								))}
 							</div>
 						)}
-						<div className="pt-2 text-sm text-secondary font-medium leading-6">{description}</div>
+						<div className="pt-2 text-sm text-secondary font-medium leading-6">
+							{description}
+						</div>
 						<div className="pt-2 text-sm text-link font-bold">
 							Read Article{" "}
 							<FontAwesomeIcon

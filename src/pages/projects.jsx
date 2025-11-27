@@ -5,7 +5,6 @@ import Footer from "../components/footer";
 import Logo from "../components/logo";
 import ProjectCard from "../components/projectCard";
 
-
 const ProjectsPage = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -19,7 +18,15 @@ const ProjectsPage = () => {
 				"Contributed to a full-stack healthcare web application serving 100+ U.S. medical practices nationwide as part of a team of 7 developers in an Agile environment.",
 			codeLink: "https://github.com/austinw8/personal-site",
 			projectLink: "https://legrandehealth.com/",
-			tags: ["React", "Typescript", "Python", "FastAPI", "PostgreSQL", "Tailwind", "SQLAlchemy"],
+			tags: [
+				"React",
+				"Typescript",
+				"Python",
+				"FastAPI",
+				"PostgreSQL",
+				"Tailwind",
+				"SQLAlchemy",
+			],
 		},
 		{
 			title: "This Portfolio Website",
@@ -30,8 +37,7 @@ const ProjectsPage = () => {
 		},
 		{
 			title: "Jumpy Boi",
-			description:
-				"An experiment in a physics-based platformer game.",
+			description: "An experiment in a physics-based platformer game.",
 			codeLink: "https://github.com/austinw8/jumpy_boi",
 			projectLink: "https://austinw8.github.io/jumpy_boi/",
 			articleSlug: "jumpy-boi",
@@ -42,7 +48,8 @@ const ProjectsPage = () => {
 			description:
 				"Save Lumeria from the gruesome dragon terrorizing the kingdom in this text-based RPG fantasy game.",
 			codeLink: "https://github.com/austinw8/dragon_bane",
-			projectLink: "https://austinw8.github.io/dragon_bane/dragon_bane.html",
+			projectLink:
+				"https://austinw8.github.io/dragon_bane/dragon_bane.html",
 			articleSlug: "dragon-bane",
 			tags: ["HTML", "CSS", "JavaScript"],
 		},
@@ -59,11 +66,12 @@ const ProjectsPage = () => {
 			description:
 				"An interactive web app of ancient shipwrecks around the Meditteranean Sea using data from GeoDatabase.",
 			codeLink: "https://github.com/austinw8/ancient_shipwrecks",
-			projectLink: "https://austinw8.shinyapps.io/ancient_shipwrecks_app/",
+			projectLink:
+				"https://austinw8.shinyapps.io/ancient_shipwrecks_app/",
 			articleSlug: "shipwreck-explorer",
 			tags: ["R", "RShiny"],
 		},
-	]
+	];
 
 	return (
 		<>
@@ -76,18 +84,19 @@ const ProjectsPage = () => {
 						</div>
 					</div>
 					<div className="flex flex-col h-full m-0 pt-28 max-[600px]:pt-15">
-						
-						<div className="title">
-							My Projects
-						</div>
+						<div className="title">My Projects</div>
 
 						<div className="subtitle pb-4">
-							A collection of projects I've worked on, both independently and collaboratively.
+							A collection of projects I've worked on, both
+							independently and collaboratively.
 						</div>
 
 						<div className="flex flex-wrap items-stretch pt-2 pb-4 -ml-4">
 							{projects.map((project, index) => (
-								<div className="w-1/3 box-border p-2.5 overflow-hidden max-[600px]:w-1/2" key={index}>
+								<div
+									className="w-1/3 box-border p-2.5 overflow-hidden max-[600px]:w-1/2"
+									key={index}
+								>
 									<ProjectCard
 										title={project.title}
 										description={project.description}

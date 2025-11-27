@@ -17,7 +17,7 @@ The businesses included in this report are:
 - Short Stop
 - Frozone
 
-*Important note: Although additional data was provided beyond this 2 month period (May 16th - July 18th), this was the only period of time in which we had data for all 6 businesses. A more comprehensive analysis could be done over a longer period of time provided more data on each business.*
+_Important note: Although additional data was provided beyond this 2 month period (May 16th - July 18th), this was the only period of time in which we had data for all 6 businesses. A more comprehensive analysis could be done over a longer period of time provided more data on each business._
 
 ## Key Findings
 
@@ -49,6 +49,7 @@ data_tidy |>
     caption = "Figure 1"
   )
 ```
+
 </details>
 
 <p align="center">
@@ -56,10 +57,11 @@ data_tidy |>
 </p>
 
 ## Revenue Over Time
+
 This table summarizes the peak revenue for each business across daily, weekly, and monthly periods.
 
 | Business Name   | Peak Daily Revenue | Peak Weekly Revenue | Peak Monthly Revenue |
-|-----------------|--------------------|---------------------|----------------------|
+| --------------- | ------------------ | ------------------- | -------------------- |
 | LeBelle         | $2,102             | $4,590              | $7,048               |
 | Tacontento      | $1,550             | $3,194              | $6,319               |
 | Hot Diggity     | $990               | $3,086              | $9,343               |
@@ -73,11 +75,11 @@ Let’s take a look at how each business did over the two month period.
 <summary>View Code</summary>
 
 ```r
-data_tidy |> 
-  mutate(week = floor_date(date_time_MDT, "week")) |> 
-  group_by(Name, week) |> 
-  summarise(week_total = sum(Amount)) |> 
-  ggplot(aes(x = week, y = week_total, color = fct_reorder2(Name, week, week_total))) + 
+data_tidy |>
+  mutate(week = floor_date(date_time_MDT, "week")) |>
+  group_by(Name, week) |>
+  summarise(week_total = sum(Amount)) |>
+  ggplot(aes(x = week, y = week_total, color = fct_reorder2(Name, week, week_total))) +
   geom_line(linewidth = 1.2) +
   scale_color_manual(values = business_colors) +
   scale_y_continuous(labels = label_dollar(prefix = "$")) +
@@ -87,14 +89,15 @@ data_tidy |>
         legend.position = "right") +
   theme_minimal() +
   labs(
-    title = "Sharp periods of growth and decline for most businesses", 
+    title = "Sharp periods of growth and decline for most businesses",
     subtitle = "May 16th - July 18th",
     x = "",
     y = "",
-    color = "Business Name", 
+    color = "Business Name",
     caption = "Figure 2"
   )
 ```
+
 </details>
 
 <p align="center">
@@ -118,12 +121,12 @@ slopes <- data_tidy %>%
   group_by(Name) %>%
   summarise(slope = coef(lm(week_total ~ as.numeric(week)))[2], .groups = 'drop')
 
-data_tidy |> 
+data_tidy |>
   mutate(week = floor_date(date_time_MDT, "week"),
-         Name = factor(Name, levels = slopes$Name[order(slopes$slope, decreasing = TRUE)])) |> 
-  group_by(Name, week) |> 
-  summarise(week_total = sum(Amount)) |> 
-  ggplot(aes(x = week, y = week_total, color = Name)) + 
+         Name = factor(Name, levels = slopes$Name[order(slopes$slope, decreasing = TRUE)])) |>
+  group_by(Name, week) |>
+  summarise(week_total = sum(Amount)) |>
+  ggplot(aes(x = week, y = week_total, color = Name)) +
   geom_smooth(method = "lm") +
   scale_color_manual(values = business_colors) +
   scale_y_continuous(labels = label_dollar(prefix = "$")) +
@@ -133,14 +136,15 @@ data_tidy |>
   theme(axis.title.y = element_text(angle = 90),
         legend.position = "none") +
   labs(
-    title = "LeBelle, Tacontento, and Frozone show strong growth \nwhile others struggle", 
+    title = "LeBelle, Tacontento, and Frozone show strong growth \nwhile others struggle",
     x = "",
     y = "",
-    color = "Business Name", 
+    color = "Business Name",
     caption = "Figure 3"
   ) +
   facet_wrap(~Name)
 ```
+
 </details>
 
 <p align="center">
@@ -150,14 +154,15 @@ data_tidy |>
 This plot helps us more clearly see revenue trends of each business, and makes it clear that LeBelle leads the way with the most promising revenue forecast, followed by Tacontento and Frozone.
 
 ## Transaction Value
+
 Finally, let’s take a look at the transaction values for each business.
 
 <details>
 <summary>View Code</summary>
 
 ```r
-data_tidy |> 
-  group_by(Name) |> 
+data_tidy |>
+  group_by(Name) |>
   ggplot(aes(x = reorder(Name, -Amount), y = Amount, fill = Name)) +
   geom_boxplot() +
   #geom_jitter(alpha = 0.25, width = 0.3) +
@@ -170,10 +175,11 @@ data_tidy |>
   labs(
     title = "LeBelle has overall the highest transaction values",
     x = "",
-    y = "Transaction Amount", 
+    y = "Transaction Amount",
     caption = "Figure 4"
   )
 ```
+
 </details>
 
 <p align="center">
@@ -181,11 +187,13 @@ data_tidy |>
 </p>
 
 ## Recommendation
+
 Based on consistent high revenue, upward growth trends, and high transaction values, LeBelle demonstrates the strongest potential for growth and stability, making it the most promising candidate to receive a business loan.
 
 LeBelle’s consistent performance across daily, weekly, and monthly time periods indicates a strong and reliable customer base. The upward growth trend suggests the potential for further expansion. High transaction values imply customers are willing to spend more on LeBelle’s offerings.
 
 ## Risks and Considerations:
+
 Further due diligence is necessary to understand the reasons behind LeBelle’s success, along with potential risks associated with their business model.
 
 While LeBelle seems to be the strongest candidate, we’ve only looked at revenue data in a relatively short time period. Other factors beyond revenue, such as the size of the target market, scalability of the business model, and the competitive landscape, should be considered before making an investment decision.
@@ -194,10 +202,10 @@ While LeBelle seems to be the strongest candidate, we’ve only looked at revenu
 <summary>View Code</summary>
 
 ```r
-data_tidy |> 
-  mutate(Hour = hour(date_time_MDT)) |> 
-  group_by(Name, Hour) |> 
-  summarise(Transactions = n(), .groups = 'drop') |> 
+data_tidy |>
+  mutate(Hour = hour(date_time_MDT)) |>
+  group_by(Name, Hour) |>
+  summarise(Transactions = n(), .groups = 'drop') |>
   ggplot(aes(x = Hour, y = Transactions, fill = Name)) +
   geom_bar(stat = "identity", position = "dodge") +
   scale_x_continuous(n.breaks = 8) +
@@ -215,13 +223,13 @@ data_tidy |>
 
 #What are the peak revenue days for each business?
 
-data_tidy |> 
-  mutate(day = floor_date(date_time_MDT, "day")) |> 
-  group_by(Name, day) |> 
-  summarise(daily_total = sum(Amount)) |> 
+data_tidy |>
+  mutate(day = floor_date(date_time_MDT, "day")) |>
+  group_by(Name, day) |>
+  summarise(daily_total = sum(Amount)) |>
   summarise(`Daily Max` = max(daily_total),
-            `Daily Min` = min(daily_total)) |> 
-  pivot_longer(names_to = "type", values_to = "amount", -Name) |> 
+            `Daily Min` = min(daily_total)) |>
+  pivot_longer(names_to = "type", values_to = "amount", -Name) |>
   ggplot(aes(x = reorder(Name, -amount), amount, fill = type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.7) +
   theme(legend.position = "right",
@@ -230,20 +238,20 @@ data_tidy |>
   labs(
     title = "LeBelle had the highest peak revenue day",
     subtitle = "Shortstop had the lowest",
-    x = "", 
+    x = "",
     y = "Daily Revenue",
     fill = ""
   )
 
 #What are the peak revenue weeks for each business?
 
-data_tidy |> 
-  mutate(week = floor_date(date_time_MDT, "week")) |> 
-  group_by(Name, week) |> 
-  summarise(weekly_total = sum(Amount)) |> 
+data_tidy |>
+  mutate(week = floor_date(date_time_MDT, "week")) |>
+  group_by(Name, week) |>
+  summarise(weekly_total = sum(Amount)) |>
   summarise(`Weekly Max` = max(weekly_total),
-            `Weekly Min` = min(weekly_total)) |> 
-  pivot_longer(names_to = "type", values_to = "amount", -Name) |> 
+            `Weekly Min` = min(weekly_total)) |>
+  pivot_longer(names_to = "type", values_to = "amount", -Name) |>
   ggplot(aes(x = reorder(Name, -amount), amount, fill = type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.7) +
   theme(legend.position = "right",
@@ -252,20 +260,20 @@ data_tidy |>
   labs(
     title = "LeBelle had the highest peak revenue week",
     subtitle = "Frozone had the lowest",
-    x = "", 
+    x = "",
     y = "Weekly Revenue",
     fill = ""
   )
 
 #What are the peak revenue months for each business?
 
-data_tidy |> 
-  mutate(month = floor_date(date_time_MDT, "month")) |> 
-  group_by(Name, month) |> 
-  summarise(monthly_total = sum(Amount)) |> 
+data_tidy |>
+  mutate(month = floor_date(date_time_MDT, "month")) |>
+  group_by(Name, month) |>
+  summarise(monthly_total = sum(Amount)) |>
   summarise(`Monthly Max` = max(monthly_total),
-            `Monthly Min` = min(monthly_total)) |> 
-  pivot_longer(names_to = "type", values_to = "amount", -Name) |> 
+            `Monthly Min` = min(monthly_total)) |>
+  pivot_longer(names_to = "type", values_to = "amount", -Name) |>
   ggplot(aes(x = reorder(Name, -amount), amount, fill = type)) +
   geom_bar(stat = "identity", position = "dodge", width = 0.7) +
   theme(legend.position = "right",
@@ -274,9 +282,10 @@ data_tidy |>
   labs(
     title = "HotDigitty had the highest peak revenue month",
     subtitle = "Frozone had the lowest",
-    x = "", 
+    x = "",
     y = "Monthly Revenue",
     fill = ""
   )
 ```
+
 </details>

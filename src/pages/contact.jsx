@@ -24,18 +24,22 @@ const ContactPage = () => {
 					</div>
 
 					<div className="flex flex-col justify-around mt-28">
-						<div className="title">
-							Ways to Connect with Me
-						</div>
+						<div className="title">Ways to Connect with Me</div>
 
 						<div className="subtitle !w-full">
-							Thanks for reaching out! I'd love to hear your thoughts, questions, or ideas.
-							<br></br>Just shoot me an email at {" "}
-							<a href={`mailto:${INFO.main.email}`} className="text-link">
+							Thanks for reaching out! I'd love to hear your
+							thoughts, questions, or ideas.
+							<br></br>Just shoot me an email at{" "}
+							<a
+								href={`mailto:${INFO.main.email}`}
+								className="text-link"
+							>
 								{INFO.main.email}
-							</a>.
-							I usually reply within a day (unless things get crazy 🤪).
-							<br></br>You can also check out my links below to connect elsewhere.
+							</a>
+							. I usually reply within a day (unless things get
+							crazy 🤪).
+							<br></br>You can also check out my links below to
+							connect elsewhere.
 						</div>
 					</div>
 

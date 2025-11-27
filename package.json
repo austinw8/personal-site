@@ -38,7 +38,12 @@
 		"dev": "vite",
 		"start": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"format": "prettier --write src/**/*.{js,jsx,json,css,md}",
+		"format:check": "prettier --check src/**/*.{js,jsx,json,css,md}",
+		"lint": "eslint src/**/*.{js,jsx}",
+		"lint:fix": "eslint --fix src/**/*.{js,jsx}",
+		"fix": "npm run format && npm run lint:fix"
 	},
 	"browserslist": {
 		"production": [

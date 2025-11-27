@@ -11,14 +11,15 @@ const Logo = (props) => {
 	}
 
 	const imageElement = (
-		<img src={INFO.main.logo} alt="logo" className="rounded-full block m-0 p-0" width={width} />
+		<img
+			src={INFO.main.logo}
+			alt="logo"
+			className="rounded-full block m-0 p-0"
+			width={width}
+		/>
 	);
 
-	return (
-		<>
-			{link ? <Link to="/">{imageElement}</Link> : imageElement}
-		</>
-	);
+	return <>{link ? <Link to="/">{imageElement}</Link> : imageElement}</>;
 };
 
 export default Logo;

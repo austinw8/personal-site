@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/logo";
 import Footer from "../components/footer";
@@ -70,7 +67,9 @@ const Homepage = () => {
 					<div>
 						<div className="flex lg:flex-row flex-col justify-between items-center">
 							<div className="flex flex-col items-start order-2 lg:order-none w-full lg:w-auto">
-								<div style={{ fontSize: "2rem" }}>Austin Mangelson</div>
+								<div style={{ fontSize: "2rem" }}>
+									Austin Mangelson
+								</div>
 								<div className="title w-full lg:w-[85%]">
 									{INFO.homepage.title}
 								</div>

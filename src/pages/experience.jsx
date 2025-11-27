@@ -27,9 +27,7 @@ const ExperiencePage = () => {
 
 					<div className="flex flex-col justify-around mt-28">
 						<div className="flex items-center justify-between">
-							<div className="title">
-								My Work Experience
-							</div>
+							<div className="title">My Work Experience</div>
 							<button
 								onClick={() => setShowResumeModal(true)}
 								className="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg text-sm"
@@ -38,111 +36,169 @@ const ExperiencePage = () => {
 							</button>
 						</div>
 						<br></br>
-		<div className="w-full">
-			<Card
-				icon={faBriefcase}
-				title="Work"
-				body={
-					<div className="mb-2.5">
-
-						{/* DataThink - Parent Company */}
-						<div className="pb-6">
-							<div className="flex">
-								<a
-									href="https://datathink.io/"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="flex-shrink-0"
-								>
-									<img
-										src="./images/datathink-logo.png"
-										alt="DataThink"
-										className="h-10 w-10 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
-									/>
-								</a>
-								<div className="pl-5">
-									<div className="text-lg font-bold text-secondary">DataThink</div>
-									<div className="text-sm text-secondary pt-1">
-										Consultant
-									</div>
-									<div className="text-sm text-tertiary pt-1 italic">
-										2024 - Present
-									</div>
-								</div>
-							</div>
-
-							{/* Nested Client Engagements */}
-							<div className="pl-16 pt-8 space-y-8">
-
-								{/* Legrande Client */}
-								<div className="relative">
-									<div className="flex">
-										<a
-											href="https://legrandehealth.com/"
-											target="_blank"
-											rel="noopener noreferrer"
-											className="flex-shrink-0"
-										>
-											<img
-												src="./images/legrande-logo.png"
-												alt="Legrande Health"
-												className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
-											/>
-										</a>
-										<div className="pl-5">
-											<div className="text-base font-semibold text-secondary">Legrande Health</div>
-											<div className="text-xs text-tertiary pt-1">
-												Software Developer / Lead Data Analyst
+						<div className="w-full">
+							<Card
+								icon={faBriefcase}
+								title="Work"
+								body={
+									<div className="mb-2.5">
+										{/* DataThink - Parent Company */}
+										<div className="pb-6">
+											<div className="flex">
+												<a
+													href="https://datathink.io/"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="flex-shrink-0"
+												>
+													<img
+														src="./images/datathink-logo.png"
+														alt="DataThink"
+														className="h-10 w-10 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
+													/>
+												</a>
+												<div className="pl-5">
+													<div className="text-lg font-bold text-secondary">
+														DataThink
+													</div>
+													<div className="text-sm text-secondary pt-1">
+														Consultant
+													</div>
+													<div className="text-sm text-tertiary pt-1 italic">
+														2024 - Present
+													</div>
+												</div>
 											</div>
-											<div className="text-xs text-tertiary pt-1 italic">
-												2024 - Present
+
+											{/* Nested Client Engagements */}
+											<div className="pl-16 pt-8 space-y-8">
+												{/* Legrande Client */}
+												<div className="relative">
+													<div className="flex">
+														<a
+															href="https://legrandehealth.com/"
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex-shrink-0"
+														>
+															<img
+																src="./images/legrande-logo.png"
+																alt="Legrande Health"
+																className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
+															/>
+														</a>
+														<div className="pl-5">
+															<div className="text-base font-semibold text-secondary">
+																Legrande Health
+															</div>
+															<div className="text-xs text-tertiary pt-1">
+																Software
+																Developer / Lead
+																Data Analyst
+															</div>
+															<div className="text-xs text-tertiary pt-1 italic">
+																2024 - Present
+															</div>
+														</div>
+													</div>
+													<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
+														<li>
+															Maintained Legrande
+															Health’s order
+															management platform,
+															a full-stack web app
+															processing 200+
+															weekly orders for
+															115+ medical
+															practices using
+															React, Python,
+															FastAPI, and
+															PostgreSQL.
+														</li>
+														<li>
+															Developed
+															interactive
+															analytics dashboards
+															and custom reporting
+															tools both inside
+															and outside the
+															portal, empowering
+															clinics and admins
+															to track
+															performance,
+															inventory, and
+															patient metrics.
+														</li>
+														<li>
+															Built and automated
+															ETL data migration
+															pipelines with
+															PostgreSQL,
+															BigQuery, Meltano,
+															and Google Cloud
+															Run, enabling
+															business reporting
+															and cost-saving
+															insights.
+														</li>
+													</ul>
+												</div>
+
+												{/* Mountain West Client */}
+												<div className="relative">
+													<div className="flex">
+														<a
+															href="https://mountainwestanesthesia.com/"
+															target="_blank"
+															rel="noopener noreferrer"
+															className="flex-shrink-0"
+														>
+															<img
+																src="./images/mwa-logo.png"
+																alt="Mountain West Anesthesiology"
+																className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
+															/>
+														</a>
+														<div className="pl-5">
+															<div className="text-base font-semibold text-secondary">
+																Mountain West
+																Anesthesiology
+															</div>
+															<div className="text-xs text-tertiary pt-1">
+																Data Scientist
+															</div>
+															<div className="text-xs text-tertiary pt-1 italic">
+																2024 - 2025
+															</div>
+														</div>
+													</div>
+													<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
+														<li>
+															Maintained an R
+															Shiny app for a
+															network of
+															anesthesiologists,
+															reducing manual
+															reporting time from
+															40 hours per month
+															to only a couple
+															hours of maintenance
+															per month.
+														</li>
+														<li>
+															Developed R packages
+															and system testing
+															for easier reporting
+															and app maintenance.
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
-									<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
-										<li>Maintained Legrande Health’s order management platform, a full-stack web app processing 200+ weekly orders for 115+ medical practices using React, Python, FastAPI, and PostgreSQL.</li>
-										<li>Developed interactive analytics dashboards and custom reporting tools both inside and outside the portal, empowering clinics and admins to track performance, inventory, and patient metrics.</li>
-										<li>Built and automated ETL data migration pipelines with PostgreSQL, BigQuery, Meltano, and Google Cloud Run, enabling business reporting and cost-saving insights.</li>
-									</ul>
-								</div>
-
-								{/* Mountain West Client */}
-								<div className="relative">
-									<div className="flex">
-										<a
-											href="https://mountainwestanesthesia.com/"
-											target="_blank"
-											rel="noopener noreferrer"
-											className="flex-shrink-0"
-										>
-											<img
-												src="./images/mwa-logo.png"
-												alt="Mountain West Anesthesiology"
-												className="h-8 w-8 rounded-full outline outline-1 outline-white shadow-md hover:opacity-80 transition-opacity cursor-pointer"
-											/>
-										</a>
-										<div className="pl-5">
-											<div className="text-base font-semibold text-secondary">Mountain West Anesthesiology</div>
-											<div className="text-xs text-tertiary pt-1">
-												Data Scientist
-											</div>
-											<div className="text-xs text-tertiary pt-1 italic">
-												2024 - 2025
-											</div>
-										</div>
-									</div>
-									<ul className="pl-12 pt-3 space-y-2 text-xs text-tertiary list-disc">
-										<li>Maintained an R Shiny app for a network of anesthesiologists, reducing manual reporting time from 40 hours per month to only a couple hours of maintenance per month.</li>
-										<li>Developed R packages and system testing for easier reporting and app maintenance.</li>
-									</ul>
-								</div>
-							</div>
+								}
+							/>
 						</div>
-
-					</div>
-				}
-			/>
-		</div>
 					</div>
 					<div className="page-footer">
 						<Footer />
@@ -161,7 +217,9 @@ const ExperiencePage = () => {
 						onClick={(e) => e.stopPropagation()}
 					>
 						<div className="flex items-center justify-between p-4 border-b">
-							<h2 className="text-xl font-bold text-secondary">Resume</h2>
+							<h2 className="text-xl font-bold text-secondary">
+								Resume
+							</h2>
 							<button
 								onClick={() => setShowResumeModal(false)}
 								className="text-gray-500 hover:text-gray-700 text-2xl font-bold w-8 h-8 flex items-center justify-center"

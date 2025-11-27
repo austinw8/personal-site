@@ -41,7 +41,10 @@ const ReadArticle = () => {
 						</div>
 					</div>
 
-					<div className="flex items-center gap-2 pt-24 pb-2.5 cursor-pointer text-secondary text-base transition-colors duration-200 ease-in-out hover:text-primary" onClick={() => navigate("/articles")}>
+					<div
+						className="flex items-center gap-2 pt-24 pb-2.5 cursor-pointer text-secondary text-base transition-colors duration-200 ease-in-out hover:text-primary"
+						onClick={() => navigate("/articles")}
+					>
 						<ArrowLeft size={20} className="flex-shrink-0" />
 						<span>Back to articles</span>
 					</div>
@@ -66,13 +69,14 @@ const ReadArticle = () => {
 								</div>
 							)}
 
-							<div className="prose prose-zinc max-w-none pb-12
+							<div
+								className="prose prose-zinc max-w-none pb-12
 								prose-headings:text-primary
 								prose-a:text-link prose-a:no-underline hover:prose-a:underline
 								prose-code:before:content-none prose-code:after:content-none
 								prose-code:bg-zinc-100 prose-code:rounded-sm prose-code:px-2 prose-code:py-0.5 prose-code:text-primary prose-code:font-mono prose-code:font-normal
 								prose-pre:bg-zinc-100 prose-pre:rounded-sm prose-pre:text-primary"
-								>
+							>
 								<ReactMarkdown
 									remarkPlugins={[remarkGfm]}
 									rehypePlugins={[rehypeRaw]}

@@ -14,7 +14,9 @@ const Article = (props) => {
 					<div className="opacity-100 text-tertiary text-xs mb-4">
 						|&nbsp;&nbsp;&nbsp;{date}
 					</div>
-					<div className="opacity-100 text-primary text-base mb-4 font-bold">{title}</div>
+					<div className="opacity-100 text-primary text-base mb-4 font-bold">
+						{title}
+					</div>
 					<div className="opacity-100 text-secondary text-xs leading-normal">
 						{description}
 					</div>

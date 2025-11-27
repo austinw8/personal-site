@@ -6,7 +6,6 @@ slug: "dragon-bane"
 tags: [HTML, CSS, JavaScript]
 ---
 
-
 [**Dragon Bane**](https://austinw8.github.io/dragon_bane/dragon_bane.html) started as a small JavaScript project from a FreeCodeCamp module. The original assignment was straightforward: build a simple RPG with a few buttons, a monster, a player health bar, and some basic stats. I wanted practice with JavaScript and DOM manipulation, but once I started building, I found myself having way too much fun with it! One feature led to another, and before long the “simple project” had grown into a surprisingly expansive game idea.
 
 I really wanted to expand the base idea into something that felt like a captivating game. Below are some of the major features I added, and what I learned while building them.
@@ -19,9 +18,9 @@ I really wanted to expand the base idea into something that felt like a captivat
 
 ### Monsters
 
-I really enjooyed making the game feel alive through dynamic content. Instead of fighting the same monster every time, I built a system that randomly selects from a pool of enemies, each with its own stats, images, and personality. Adding variety pushed me to think more carefully about game balance and how to scale difficulty in a way that felt fair. 
+I really enjooyed making the game feel alive through dynamic content. Instead of fighting the same monster every time, I built a system that randomly selects from a pool of enemies, each with its own stats, images, and personality. Adding variety pushed me to think more carefully about game balance and how to scale difficulty in a way that felt fair.
 
-Some of my favorite monsters I incorporated include goofy ones like Shrek, the *Rabbit of Caerbannog*, and *Stay Puft Marshmallow Man*, alongside more serious fantasy creatures such as a bloodshade, cavestalker, and slime balls. 
+Some of my favorite monsters I incorporated include goofy ones like Shrek, the _Rabbit of Caerbannog_, and _Stay Puft Marshmallow Man_, alongside more serious fantasy creatures such as a bloodshade, cavestalker, and slime balls.
 
 <p align="center">
   <img src="../public/article_images/dragon-bane/cave-stalker.png" width="550" />

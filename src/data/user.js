@@ -16,15 +16,15 @@ const INFO = {
 		description: [
 			"I’m a software developer and lead data analyst at DataThink.io.",
 			"I live in Idaho Falls with my wife, Monica, and love building tools that make life easier while tackling complex problems that keep me learning and growing.",
-		].join(" ")
+		].join(" "),
 	},
 
 	articles: {
 		title: "Articles",
 		description: [
-			"A collection of my thoughts, insights, and things I'm learning from the projects I work on."
-		].join(" ")
-	}
+			"A collection of my thoughts, insights, and things I'm learning from the projects I work on.",
+		].join(" "),
+	},
 };
 
 export default INFO;

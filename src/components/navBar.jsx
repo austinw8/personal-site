@@ -14,7 +14,9 @@ const NavBar = (props) => {
 								<Link
 									to="/"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "home" ? "text-link" : "text-primary"
+										active === "home"
+											? "text-link"
+											: "text-primary"
 									}`}
 								>
 									Home
@@ -24,7 +26,9 @@ const NavBar = (props) => {
 								<Link
 									to="/projects"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "projects" ? "text-link" : "text-primary"
+										active === "projects"
+											? "text-link"
+											: "text-primary"
 									}`}
 								>
 									Projects
@@ -34,7 +38,9 @@ const NavBar = (props) => {
 								<Link
 									to="/articles"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "articles" ? "text-link" : "text-primary"
+										active === "articles"
+											? "text-link"
+											: "text-primary"
 									}`}
 								>
 									Articles
@@ -44,7 +50,9 @@ const NavBar = (props) => {
 								<Link
 									to="/experience"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "experience" ? "text-link" : "text-primary"
+										active === "experience"
+											? "text-link"
+											: "text-primary"
 									}`}
 								>
 									Experience
@@ -54,7 +62,9 @@ const NavBar = (props) => {
 								<Link
 									to="/contact"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "contact" ? "text-link" : "text-primary"
+										active === "contact"
+											? "text-link"
+											: "text-primary"
 									}`}
 								>
 									Contact

@@ -8,7 +8,7 @@ tags: [HTML, CSS, JavaScript]
 
 [**Jumpi Boi**](https://austinw8.github.io/jumpy_boi/) is a small experiment in a physics-based platformer game. I wanted something fast and playful. The final result mixes Canvas rendering, custom physics, collision detection, and a simple checkpoint system.
 
-This project pushed me to think differently about animation loops, object movement, player state, and how much complexity hides behind what looks like a simple jump. 
+This project pushed me to think differently about animation loops, object movement, player state, and how much complexity hides behind what looks like a simple jump.
 
 <p align="center">
   <img src="../public/article_images/jumpy-boi/start.png" width="550" />
@@ -33,7 +33,6 @@ This meant tying horizontal movement to two separate behaviors:
 1. When the player is in the early part of the screen, they move.
 
 2. When they get near the middle, the world moves instead.
-
 
 ### Checkpoints and Game Flow
 

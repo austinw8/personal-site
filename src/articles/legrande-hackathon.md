@@ -6,15 +6,15 @@ slug: "legrande-heackathon"
 tags: [React, Gemini, BigQuery, Plotly]
 ---
 
-The CEO of Legrande Health, a perscription management healthcare company, has been hearing a lot about AI and wanted to see how it could be integrated into their existing order management web application. To explore this the team at DataThink, Legrande's software development and data management consultants, organized a hackathon to bring AI into their order management app. 
+The CEO of Legrande Health, a perscription management healthcare company, has been hearing a lot about AI and wanted to see how it could be integrated into their existing order management web application. To explore this the team at DataThink, Legrande's software development and data management consultants, organized a hackathon to bring AI into their order management app.
 
 The goal wasn’t to ship something perfect. It was to explore, experiment, and walk away with a clearer sense of what's practical and worth putting more development time into.
 
 ## The 4 Teams
 
-We split into four teams, each focusing on a different way to integrate AI into the app. 
+We split into four teams, each focusing on a different way to integrate AI into the app.
 
-1. Patient summary generator based on phone call transcripts and text messages. 
+1. Patient summary generator based on phone call transcripts and text messages.
 2. Forecasting bulk-order sales from historical data.
 3. An app-wide chat assistant to guide users and answer basic questions.
 4. An analytics assistant that answers data questions and generates charts.
@@ -27,7 +27,7 @@ We used Gemini Pro for the reasoning and text generation layer, paired with a cu
 
 ## Outcome
 
-By the end of the 24 hours, we had a working prototype we named TθN1 (Tony), a nod to Legrande's CEO. It handled prompts like “*How many orders came in last month?*” or “*Give me a breakdown by product category,*” wrote the SQL query, pulled the data from BigQuery, and produced Plotly visualizations in seconds.
+By the end of the 24 hours, we had a working prototype we named TθN1 (Tony), a nod to Legrande's CEO. It handled prompts like “_How many orders came in last month?_” or “_Give me a breakdown by product category,_” wrote the SQL query, pulled the data from BigQuery, and produced Plotly visualizations in seconds.
 
 <p align="center" style="display: flex; gap: 20px; justify-content: center;">
   <img src="../public/article_images/legrande-hackathon/tony-assistant.png" width="45%" />

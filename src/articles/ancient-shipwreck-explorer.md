@@ -11,6 +11,7 @@ Explore ancient European shipwrecks with this [Shipwreck Explorer](https://austi
 This map contains shipwrecks as far back as 1,800 B.C., with ships from multiple eras, ranging all the way from the western coast of Africa to the Arabian Sea, and from the Red Sea to northern Norway.
 
 Filter by:
+
 - Era (Hellenistic, Punic, Byzantine, Roman, etc.)
 - Cargo Type (amphora, stone, metal artifacts, money, etc.)
 - Sea Area (Baltic Sea, Mediterranean, Adriatic Sea, English Channel, etc.)
@@ -39,7 +40,7 @@ shipwrecks <- read_csv("geodatabase_shipwrecks.csv")
 colnames(shipwrecks) <- tolower(colnames(shipwrecks))
 
 format_time_period <- function(start, end) {
-  
+
   format_date <- function(date) {
     if (is.na(date)) {
       return("Unknown")
@@ -49,10 +50,10 @@ format_time_period <- function(start, end) {
       return(paste0("A.D. ", date))
     }
   }
-  
+
   start_str <- format_date(start)
   end_str <- format_date(end)
-  
+
   return(paste(start_str, "-", end_str))
 }
 
@@ -61,21 +62,21 @@ shipwrecks$depth <- as.numeric(shipwrecks$depth)
 shipwrecks$year_found <- as.numeric(shipwrecks$year_found)
 
 
-shipwrecks_tidy <- shipwrecks |> 
-  mutate(depth_m = ifelse(is.na(depth), 
+shipwrecks_tidy <- shipwrecks |>
+  mutate(depth_m = ifelse(is.na(depth),
                           ifelse(!is.na(oxrep_min_depth) & !is.na(oxrep_max_depth), (oxrep_min_depth + oxrep_max_depth) / 2,
-                                 ifelse(!is.na(oxrep_min_depth), oxrep_min_depth, oxrep_max_depth)), 
+                                 ifelse(!is.na(oxrep_min_depth), oxrep_min_depth, oxrep_max_depth)),
                           depth),
          start_date = ifelse(is.na(start_date), oxrep_earliest_date, start_date),
-         end_date = ifelse(is.na(end_date), oxrep_latest_date, end_date)) |> 
+         end_date = ifelse(is.na(end_date), oxrep_latest_date, end_date)) |>
   rename(est_disp = "estimated displacement",
          sea_area = "oxrep_sea_area",
          country = "oxrep_country",
          region = "oxrep_region",
          era = "oxrep_period",
-         est_tons = "oxrep_estimated_tonnage") |> 
-  filter(!is.na(start_date) & !is.na(end_date)) |> 
-  mutate(time_period = mapply(format_time_period, start_date, end_date)) |> 
+         est_tons = "oxrep_estimated_tonnage") |>
+  filter(!is.na(start_date) & !is.na(end_date)) |>
+  mutate(time_period = mapply(format_time_period, start_date, end_date)) |>
   mutate(era = case_when(
     is.na(era) ~ "Unknown",
     era %in% c("0", "?", "Ancient", "Ancient?", "Ancient (?)", "Not known") ~ "Unknown",
@@ -87,7 +88,7 @@ shipwrecks_tidy <- shipwrecks |>
     era %in% c("Byzantine", "Late Byzantine", "Middle Byzantine", "Early Byzantine", "early Byzantine", "Late Antique", "Late Antiquity", "Medieval", "Paleochristian") ~ "Byzantine",
     era %in% c("Norman", "Norman/Arab") ~ "Norman",
     TRUE ~ era
-  )) |> 
+  )) |>
   mutate(sea_area = case_when(
     is.na(sea_area) ~ "Unknown",
     sea_area %in% c("Non-Mediterranean") ~ "Unknown",
@@ -98,13 +99,13 @@ shipwrecks_tidy <- shipwrecks |>
     sea_area %in% c("Eastern Mediterranean") ~ "Mediterranean (eastern)",
     sea_area %in% c("West Mediterranean", "Western Mediterranean") ~ "Mediterranean (western)",
     TRUE ~ sea_area
-  )) |> 
+  )) |>
   mutate(
     sea_area = case_when(
       sea_area != "Unknown" ~ sea_area,
-      between(latitude, 42, 46) & between(longitude, 27.65, 41) ~ "Black Sea", 
+      between(latitude, 42, 46) & between(longitude, 27.65, 41) ~ "Black Sea",
       between(latitude, 35.1, 40.77) & between(longitude, 22.8, 27.9) ~ "Aegean Sea",
-      between(latitude, 43, 45.9) & between(longitude, 12.1, 16.8) ~ "Adriatic Sea", 
+      between(latitude, 43, 45.9) & between(longitude, 12.1, 16.8) ~ "Adriatic Sea",
       between(latitude, 39.5, 43) & between(longitude, 15.4, 19.9) ~ "Adriatic Sea",
       between(latitude, 31, 37) & between(longitude, 24, 36) ~ "Mediterannean (eastern)",
       between(latitude, 36, 44.4) & between(longitude, 0, 10) ~ "Mediterannean (western)",
@@ -121,10 +122,10 @@ shipwrecks_tidy <- shipwrecks |>
       between(latitude, 53, 62) & between(longitude, 0, 9.5) ~ "North Sea",
       between(latitude, 62, 68) & between(longitude, 2, 16) ~ "Norwegian Sea",
       TRUE ~ "Unknown"
-    )) |> 
+    )) |>
   mutate(cargo_1 = str_trim(cargo_1),
          cargo_2 = str_trim(cargo_2),
-         cargo_3 = str_trim(cargo_3)) |> 
+         cargo_3 = str_trim(cargo_3)) |>
   mutate(
     cargo_type = case_when(
       is.na(cargo_1) ~ "None",
@@ -140,7 +141,7 @@ shipwrecks_tidy <- shipwrecks |>
       cargo_1 %in% c("Coins", "coins") ~ "Money",
       cargo_1 %in% c("glass") ~ "Glass",
       TRUE ~ cargo_1
-    )) |> 
+    )) |>
   mutate(
     cargo_2 = case_when(
       is.na(cargo_2) ~ "None",
@@ -156,7 +157,7 @@ shipwrecks_tidy <- shipwrecks |>
       cargo_2 %in% c("Coins", "coins") ~ "Money",
       cargo_2 %in% c("glass") ~ "Glass",
       TRUE ~ cargo_2
-    )) |> 
+    )) |>
   mutate(
     cargo_3 = case_when(
       is.na(cargo_3) ~ "None",
@@ -171,9 +172,10 @@ shipwrecks_tidy <- shipwrecks |>
       cargo_3 %in% c("bowls and cups, flasks and goblets", "textiles", "sledge", "tools for navigation", "whalebone artifacts", "construction/building materials", "bowls and cups, flasks and goblets ", "animal remains","antler pieces", "barrels and glass", "glass", "Afr", "Barrels", "Cylindrical African type, close to Dramont F", "Other", "other", "column", "fabric", "handmills, possible wreck", "artistic pieces", "barrels", "barrels of tar and wax", "musical instruments", "lamps", "oak boards", "animal bone", "sheep wool", "sleighs", "tent", "lids", "Planks", "dog harness") ~ "Misc.",
       cargo_3 %in% c("Coins", "coins", "gold coins") ~ "Money",
       TRUE ~ cargo_3
-    )) |> 
+    )) |>
   select(name, latitude, longitude, sea_area, country, start_date, end_date, time_period, era, depth_m, year_found, cargo_type, cargo_1, length, width)
 ```
+
 </details>
 
 <details>
@@ -204,10 +206,10 @@ ui <- page_sidebar(
                   multiple = TRUE)
     )),
   layout_columns(
-    
+
     card(card_header("Shipwreck Map"),
          leafletOutput("map")),
-    
+
     card(card_header("Shipwreck Information"),
          tableOutput("shipwreckTable")),
     col_widths = c(8, 4)
@@ -217,47 +219,47 @@ ui <- page_sidebar(
 
 # Define server logic required to draw a histogram
 server <- function(input, output, session) {
-  
+
   filtered_shipwrecks <- reactive({
-    data <- shipwrecks_tidy |> 
+    data <- shipwrecks_tidy |>
       filter(
         start_date <= input$dateRange[2],
         end_date >= input$dateRange[1]
       )
-    
+
     if (!("All" %in% input$era)) {
       data <- data |>  filter(era %in% input$era)
     }
-    
+
     if (!("All" %in% input$cargo)) {
       data <- data |>  filter(cargo_type %in% input$cargo)
     }
-    
+
     if (!("All" %in% input$sea_area)) {
       data <- data |>   filter(sea_area %in% input$sea_area)
     }
-    
+
     data
   })
-  
+
   # Render Leaflet map
   output$map <- renderLeaflet({
     wreck_data <- filtered_shipwrecks()
-    
+
     if (nrow(wreck_data) == 0) {
       return(leaflet() |>  addTiles())
     }
-    
-    leaflet(data = wreck_data) |> 
-      addProviderTiles(provider = "Esri.WorldTopoMap") |> 
-      setView(lng = 16, lat = 47, zoom = 4) |> 
+
+    leaflet(data = wreck_data) |>
+      addProviderTiles(provider = "Esri.WorldTopoMap") |>
+      setView(lng = 16, lat = 47, zoom = 4) |>
       addCircleMarkers(
-        lng = ~longitude, 
+        lng = ~longitude,
         lat = ~latitude,
         radius = 5,
         color = "blue",
         stroke = FALSE,
-        fillOpacity = 0.6, 
+        fillOpacity = 0.6,
         popup = paste("<b>Name:</b>", wreck_data$name, "<br>",
                       "<b>Time Period:</b>", wreck_data$time_period, "<br>",
                       "<b>Era:</b>", wreck_data$era, "<br>",
@@ -265,21 +267,22 @@ server <- function(input, output, session) {
                       "<b>Found on Ship:</b>", wreck_data$cargo_1, "<br>")
       )
   })
-  
+
   # Render filtered table
   output$shipwreckTable <- renderTable({
-    filtered_shipwrecks() |> 
-      select(`Shipwreck Name` = name, 
+    filtered_shipwrecks() |>
+      select(`Shipwreck Name` = name,
              `Time Period` = time_period,
-             `Era` = era, 
-             `Sea Area` = sea_area, 
+             `Era` = era,
+             `Sea Area` = sea_area,
              `Cargo Type` = cargo_type,
              `Found on Ship` = cargo_1)
   })
 }
 
 
-# Run the application 
+# Run the application
 shinyApp(ui = ui, server = server)
 ```
+
 </details>
