@@ -26,11 +26,12 @@ const ArticlesPage = () => {
 
 					<div className="flex flex-col h-full m-0 pt-28">
 						<div className="title max-[1024px]:!w-full">
-							{INFO.articles.title}
+							Articles
 						</div>
 
 						<div className="subtitle max-[1024px]:!w-full">
-							{INFO.articles.description}
+							A collection of my thoughts, insights, and things
+							I'm learning from the projects I work on.
 						</div>
 
 						<div className="flex flex-col">

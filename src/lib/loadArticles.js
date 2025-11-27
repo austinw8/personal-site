@@ -1,5 +1,5 @@
 // Dynamically import all markdown files from articles folder
-const articleModules = import.meta.glob("../articles/*.md", {
+const articleModules = import.meta.glob("../data/articles/*.md", {
 	as: "raw",
 	eager: true,
 });

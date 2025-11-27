@@ -106,9 +106,3 @@ polybius_square("3511331311251543")
 polybius_square("24 45 33 24 34 42")
 #[1] "junior"
 ```
-
----
-
-### Contributing to Encrypt
-
-Have ideas of additional ciphers/codes to include in encrypt? Send me a message at [austinw.mangelson@gmail.com](mailto:austinw.mangelson@gmail.com).

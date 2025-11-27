@@ -1,29 +1,14 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-	faFaceSadCry,
-	faFaceSadTear,
-} from "@fortawesome/free-regular-svg-icons";
-
 import NavBar from "../components/navBar";
 import Logo from "../components/logo";
 
-import INFO from "../data/user";
-import {
-	faPoo,
-	faPoop,
-	faSadCry,
-	faSadTear,
-	faSkull,
-	faSkullCrossbones,
-	faTriangleExclamation,
-} from "@fortawesome/free-solid-svg-icons";
-import { faThinkPeaks } from "@fortawesome/free-brands-svg-icons";
+import { faPoop } from "@fortawesome/free-solid-svg-icons";
 
 const Notfound = () => {
 	useEffect(() => {
-		document.title = `404 | ${INFO.main.title}`;
+		document.title = `404 | Austin Mangelson Portfolio Site`;
 	}, []);
 
 	return (

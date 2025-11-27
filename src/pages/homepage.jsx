@@ -71,10 +71,15 @@ const Homepage = () => {
 									Austin Mangelson
 								</div>
 								<div className="title w-full lg:w-[85%]">
-									{INFO.homepage.title}
+									Software Developer
 								</div>
 								<div className="subtitle w-full lg:w-[85%]">
-									{INFO.homepage.description}
+									I’m a software developer and lead data
+									analyst at DataThink.io. I live in Idaho
+									Falls with my wife, Monica, and love
+									building tools that make life easier while
+									tackling complex problems that keep me
+									learning and growing.",
 								</div>
 							</div>
 
