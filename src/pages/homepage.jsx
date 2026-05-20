@@ -79,7 +79,7 @@ const Homepage = () => {
 									Falls with my wife, Monica, and love
 									building tools that make life easier while
 									tackling complex problems that keep me
-									learning and growing.",
+									learning and growing.
 								</div>
 							</div>
 
