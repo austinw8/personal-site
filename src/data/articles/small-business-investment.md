@@ -53,7 +53,7 @@ data_tidy |>
 </details>
 
 <p align="center">
-  <img src="../public/article_images/small_business_investment/small_business_investment_1.png" width="550" />
+  <img src="/article_images/small_business_investment/small_business_investment_1.png" width="550" />
 </p>
 
 ## Revenue Over Time
@@ -101,7 +101,7 @@ data_tidy |>
 </details>
 
 <p align="center">
-  <img src="../public/article_images/small_business_investment/small_business_investment_2.png" width="550" />
+  <img src="/article_images/small_business_investment/small_business_investment_2.png" width="550" />
 </p>
 
 This graph tells an interesting story. We learn that many of the businesses had particularly successful or difficult weeks.
@@ -148,7 +148,7 @@ data_tidy |>
 </details>
 
 <p align="center">
-  <img src="../public/article_images/small_business_investment/small_business_investment_3.png" width="550" />
+  <img src="/article_images/small_business_investment/small_business_investment_3.png" width="550" />
 </p>
 
 This plot helps us more clearly see revenue trends of each business, and makes it clear that LeBelle leads the way with the most promising revenue forecast, followed by Tacontento and Frozone.
@@ -183,7 +183,7 @@ data_tidy |>
 </details>
 
 <p align="center">
-  <img src="../public/article_images/small_business_investment/small_business_investment_4.png" width="550" />
+  <img src="/article_images/small_business_investment/small_business_investment_4.png" width="550" />
 </p>
 
 ## Recommendation

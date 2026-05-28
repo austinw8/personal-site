@@ -30,8 +30,8 @@ We used Gemini Pro for the reasoning and text generation layer, paired with a cu
 By the end of the 24 hours, we had a working prototype we named TθN1 (Tony), a nod to Legrande's CEO. It handled prompts like “_How many orders came in last month?_” or “_Give me a breakdown by product category,_” wrote the SQL query, pulled the data from BigQuery, and produced Plotly visualizations in seconds.
 
 <p align="center" style="display: flex; gap: 20px; justify-content: center;">
-  <img src="../public/article_images/legrande-hackathon/tony-assistant.png" width="45%" />
-  <img src="../public/article_images/legrande-hackathon/tony-outcome.png" width="45%" />
+  <img src="/article_images/legrande-hackathon/tony-assistant.png" width="45%" />
+  <img src="/article_images/legrande-hackathon/tony-outcome.png" width="45%" />
 </p>
 
 ### Where it fell short:
@@ -45,5 +45,5 @@ AI is excellent for exploration, brainstorming, and rapid iteration. It’s less
 Despite the limitations, we still considered the hackathon a win. We walked away with a clearer understanding of where AI adds real value inside Legrande’s ecosystem and where traditional engineering is still the better call.
 
 <p align="center">
-  <img src="../public/article_images/legrande-hackathon/legrande-hackathon-teams.jpeg" width="550" />
+  <img src="/article_images/legrande-hackathon/legrande-hackathon-teams.jpeg" width="550" />
 </p>

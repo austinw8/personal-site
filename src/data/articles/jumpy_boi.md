@@ -11,7 +11,7 @@ tags: [HTML, CSS, JavaScript]
 This project pushed me to think differently about animation loops, object movement, player state, and how much complexity hides behind what looks like a simple jump.
 
 <p align="center">
-  <img src="../public/article_images/jumpy-boi/start.png" width="550" />
+  <img src="/article_images/jumpy-boi/start.png" width="550" />
 </p>
 
 ## Building the Player Physics
@@ -39,7 +39,7 @@ This meant tying horizontal movement to two separate behaviors:
 I added checkpoints to break up the level and give players a sense of progress. Each checkpoint checks for collision, verifies that the previous checkpoint has been claimed, and displays a brief message. Once the final checkpoint is reached, collision detection shuts off and the player can’t move anymore, signaling the end of the level.
 
 <p align="center">
-  <img src="../public/article_images/jumpy-boi/checkpoint.png" width="550" />
+  <img src="/article_images/jumpy-boi/checkpoint.png" width="550" />
 </p>
 
 ## Lessons Learned

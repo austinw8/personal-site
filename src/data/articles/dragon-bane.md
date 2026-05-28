@@ -11,7 +11,7 @@ tags: [HTML, CSS, JavaScript]
 I really wanted to expand the base idea into something that felt like a captivating game. Below are some of the major features I added, and what I learned while building them.
 
 <p align="center">
-  <img src="../public/article_images/dragon-bane/start.png" width="550" />
+  <img src="/article_images/dragon-bane/start.png" width="550" />
 </p>
 
 ## Creating a More Dynamic Game
@@ -23,7 +23,7 @@ I really enjooyed making the game feel alive through dynamic content. Instead of
 Some of my favorite monsters I incorporated include goofy ones like Shrek, the _Rabbit of Caerbannog_, and _Stay Puft Marshmallow Man_, alongside more serious fantasy creatures such as a bloodshade, cavestalker, and slime balls.
 
 <p align="center">
-  <img src="../public/article_images/dragon-bane/cave-stalker.png" width="550" />
+  <img src="/article_images/dragon-bane/cave-stalker.png" width="550" />
 </p>
 
 ### Cave System
@@ -39,7 +39,7 @@ To tie everything together, I added an experience and leveling system. Enemy sta
 One of my favorite features to build was the treasure chest system. Every chest is a roll of the dice: you might get gold, items, a new weapon... or you might open a mimic, triggering a surprise attack. Or poison that slowly steals your health. It added tension to the game and gave me the chance to build something that felt more challenging.
 
 <p align="center">
-  <img src="../public/article_images/dragon-bane/treasure-chest.png" width="550" />
+  <img src="/article_images/dragon-bane/treasure-chest.png" width="550" />
 </p>
 
 Then came the shop system: buying, selling, and managing your gold. That introduced its own balancing challenges. I wanted players to make interesting choices with their gold, not hoard it or spend it instantly. Wil you upgrade your weapon, making it easier to kill the next monster, or spend your gold on a health potion, making sure your next attacker isn't your last?
