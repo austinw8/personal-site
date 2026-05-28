@@ -6,7 +6,7 @@ import Badge from "./badge";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCard = (props) => {
-	const { title, description, codeLink, projectLink, articleSlug, tags } =
+	const { title, description, codeLink, projectLink, articleSlugs, tags } =
 		props;
 
 	return (
@@ -68,9 +68,10 @@ const ProjectCard = (props) => {
 							</a>
 						)}
 
-						{articleSlug && (
+						{articleSlugs && articleSlugs.map(({ slug, label }) => (
 							<Link
-								to={`/article/${articleSlug}`}
+								key={slug}
+								to={`/article/${slug}`}
 								className="no-underline group"
 							>
 								<div className="flex items-center text-secondary text-xs group-hover:text-link transition-colors duration-300 ease-in-out">
@@ -78,11 +79,11 @@ const ProjectCard = (props) => {
 										<FontAwesomeIcon icon={faNewspaper} />
 									</div>
 									<div className="pl-2 font-bold">
-										Read Article
+										{label}
 									</div>
 								</div>
 							</Link>
-						)}
+						))}
 					</div>
 				</div>
 			</div>

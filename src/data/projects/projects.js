@@ -5,7 +5,10 @@ export const PROJECTS_DATA = [
 		title: "Legrande Health Web App",
 		description:
 			"Contributed to a full-stack healthcare web application serving 100+ U.S. medical practices nationwide as part of a team of 7 developers in an Agile environment.",
-		articleSlug: "legrande-health-web-app",
+		articleSlugs: [
+			{ slug: "legrande-health-web-app", label: "Web App Article" },
+			{ slug: "legrande-health-data-analytics", label: "Data Analytics Article" },
+		],
 		tags: [
 			"React",
 			"Typescript",
@@ -30,7 +33,7 @@ export const PROJECTS_DATA = [
 		description: "An experiment in a physics-based platformer game.",
 		codeLink: "https://github.com/austinw8/jumpy_boi",
 		projectLink: "https://austinw8.github.io/jumpy_boi/",
-		articleSlug: "jumpy-boi",
+		articleSlugs: [{ slug: "jumpy-boi", label: "Read Article" }],
 		tags: ["HTML", "CSS", "JavaScript"],
 	},
 	{
@@ -40,7 +43,7 @@ export const PROJECTS_DATA = [
 			"Save Lumeria from the gruesome dragon terrorizing the kingdom in this text-based RPG fantasy game.",
 		codeLink: "https://github.com/austinw8/dragon_bane",
 		projectLink: "https://austinw8.github.io/dragon_bane/dragon_bane.html",
-		articleSlug: "dragon-bane",
+		articleSlugs: [{ slug: "dragon-bane", label: "Read Article" }],
 		tags: ["HTML", "CSS", "JavaScript"],
 	},
 	{
@@ -49,7 +52,7 @@ export const PROJECTS_DATA = [
 		description:
 			"Mapping Tolkein's Middle-Earth using R-based GIS tools and spatial data to recreate iconic locations from the novels.",
 		codeLink: "https://github.com/austinw8/MiddleEarth",
-		articleSlug: "mapping-middle-earth",
+		articleSlugs: [{ slug: "mapping-middle-earth", label: "Read Article" }],
 		tags: ["R"],
 	},
 	{
@@ -59,7 +62,7 @@ export const PROJECTS_DATA = [
 			"An interactive web app of ancient shipwrecks around the Meditteranean Sea using data from GeoDatabase.",
 		codeLink: "https://github.com/austinw8/ancient_shipwrecks",
 		projectLink: "https://austinw8.shinyapps.io/ancient_shipwrecks_app/",
-		articleSlug: "shipwreck-explorer",
+		articleSlugs: [{ slug: "shipwreck-explorer", label: "Read Article" }],
 		tags: ["R", "RShiny"],
 	},
 ];

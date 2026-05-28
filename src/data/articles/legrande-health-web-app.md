@@ -24,6 +24,9 @@ Code is iterative. You build, you test, you adjust, you patch, you learn. Thatâ€
 
 If this project had a motto, it'd be something like "**Perfect is expensive. Progress is priceless.**". We release new features constantly! Sometimes they're big features, but often they're small features, little incremental improvements, cleaned-up logic, or tiny UX improvements. We don't ship sloppy code, but we like shipping code that gives the users _something_ to work with, then we can go back and iterate on their feedback.
 
+### 4. Land code, don't just ship it. 
+The work wasn't done when I pushed a report to Google Drive or deployed a dashboard. It was done when the right people knew it existed, understood what it showed, and trusted it enough to use it. I got much better at proactive updates and looping in stakeholders when something was ready, noting what changed and why, and following up to make sure it was actually meeting their needs.
+
 ## Closing Thoughts
 
 Working on this app has stretched me, humbled me, and made me a better developer in a surprisingly short time. Iâ€™ve learned to ask questions without fear, to treat mistakes as stepping stones, and to keep shipping instead of obsessing over perfection.

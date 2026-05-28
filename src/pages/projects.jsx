@@ -40,7 +40,7 @@ const ProjectsPage = () => {
 										description={project.description}
 										codeLink={project.codeLink}
 										projectLink={project.projectLink}
-										articleSlug={project.articleSlug}
+										articleSlugs={project.articleSlugs}
 										tags={project.tags}
 									/>
 								</div>
