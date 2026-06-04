@@ -7,10 +7,12 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../components/logo";
 import Footer from "../components/footer";
 import NavBar from "../components/navBar";
+import ResumeModal from "../components/resumeModal";
 
 import INFO from "../data/user";
 
 const Homepage = () => {
+	const [showResumeModal, setShowResumeModal] = useState(false);
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -55,6 +57,9 @@ const Homepage = () => {
 
 	return (
 		<>
+			{showResumeModal && (
+				<ResumeModal onClose={() => setShowResumeModal(false)} />
+			)}
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
@@ -81,6 +86,12 @@ const Homepage = () => {
 									tackling complex problems that keep me
 									learning and growing.
 								</div>
+								<button
+									onClick={() => setShowResumeModal(true)}
+									className="mt-6 px-6 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg text-sm"
+								>
+									View Resume
+								</button>
 							</div>
 
 							<div className="flex items-center order-1 lg:order-none">
@@ -96,7 +107,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="flex justify-start items-center pt-8">
+						<div className="flex justify-start items-center pt-8 gap-4">
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -104,7 +115,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
-									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -114,7 +125,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
-									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 							<a
@@ -124,7 +135,7 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faMailBulk}
-									className="pr-5 text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
+									className="text-2xl transition-colors duration-200 ease-in-out text-secondary hover:text-primary"
 								/>
 							</a>
 						</div>

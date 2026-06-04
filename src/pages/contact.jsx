@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import NavBar from "../components/navBar";
 import Footer from "../components/footer";
 import Logo from "../components/logo";
 import Socials from "../components/socials";
+import ResumeModal from "../components/resumeModal";
 
 import INFO from "../data/user";
 
 const ContactPage = () => {
+	const [showResumeModal, setShowResumeModal] = useState(false);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	return (
 		<>
+			{showResumeModal && (
+				<ResumeModal onClose={() => setShowResumeModal(false)} />
+			)}
 			<div className="page-content">
 				<NavBar active="contact" />
 				<div className="content-wrapper">
@@ -41,6 +47,15 @@ const ContactPage = () => {
 							<br></br>You can also check out my links below to
 							connect elsewhere.
 						</div>
+					</div>
+
+					<div className="flex justify-start mt-8">
+						<button
+							onClick={() => setShowResumeModal(true)}
+							className="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all shadow-md hover:shadow-lg text-sm"
+						>
+							View Resume
+						</button>
 					</div>
 
 					<div className="flex flex-col mt-16">

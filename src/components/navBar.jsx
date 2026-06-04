@@ -48,18 +48,6 @@ const NavBar = (props) => {
 							</li>
 							<li className="font-bold text-sm">
 								<Link
-									to="/experience"
-									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
-										active === "experience"
-											? "text-link"
-											: "text-primary"
-									}`}
-								>
-									Experience
-								</Link>
-							</li>
-							<li className="font-bold text-sm">
-								<Link
 									to="/contact"
 									className={`no-underline transition-colors duration-300 ease-in-out hover:text-link ${
 										active === "contact"
